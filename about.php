@@ -2,7 +2,7 @@
 <section class="aboutme-section container-fluid side-gap mt-3">
     <!-- Left Text -->
     <div class="aboutme-text">
-      <h2>Hello,b ritik</h2>
+      <h2>Hello,</h2>
       <h1>
         I am an independent graphic designer specializing <br>
         in brand identity, logo & packaging design.
