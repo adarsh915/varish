@@ -1,0 +1,698 @@
+/* ===== Custom Navbar Styles ===== */
+.unique-navbar {
+  background: white;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unique-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111;
+  text-decoration: none;
+}
+
+.unique-nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.unique-nav-links li a {
+  font-family: "Inter", Sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* underline animation effect */
+.unique-nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #000; /* black underline */
+}
+
+/* hover underline */
+.unique-nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* keep underline for active menu */
+.unique-nav-links li a.active::after {
+  width: 100%;
+}
+
+/* ===== Mobile Menu Button ===== */
+.unique-menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #111;
+}
+
+/* ===== Sidebar ===== */
+.unique-sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 2rem;
+  z-index: 999;
+}
+
+.unique-sidebar.active {
+  right: 0;
+}
+
+.unique-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.unique-sidebar ul li {
+  margin: 1rem 0;
+}
+
+.unique-sidebar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.unique-close-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .unique-nav-links {
+    display: none;
+  }
+  .unique-menu-btn {
+    display: block;
+  }
+}
+
+/* ===== Hero text Section ===== */
+.unique-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: white;
+}
+
+/* Small subtitle text */
+.unique-hero-subtitle {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+  line-height: 1.5;
+  font-family: "IBM Plex Sans", Sans-serif;
+}
+
+/* Big title */
+.unique-hero-title {
+  font-size: 11.1vw; /* responsive scaling */
+  font-weight: 700;
+  color: #000;
+  padding-left: 11px;
+  margin-bottom: 7rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .unique-hero-subtitle {
+    font-size: 0.7rem;
+  }
+  .unique-hero-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-hero-subtitle {
+    font-size: 0.65rem;
+  }
+  .unique-hero-title {
+    font-size: 2.5rem;
+  }
+}
+/*  */
+
+/* video section */
+.video-div {
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+  position: relative;
+}
+
+.video-div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes video cover full area */
+}
+/*  */
+
+/* project card  */
+.selected-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.selected-project-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #111;
+  font-family: sans-serif;
+}
+
+.selected-project-header .arrow-down {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.selected-project-header .arrow-down:hover {
+  transform: translateY(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .selected-project-header {
+    padding: 15px 20px;
+  }
+
+  .selected-project-header h2 {
+    font-size: 13px;
+  }
+
+  .selected-project-header .arrow-down {
+    font-size: 16px;
+  }
+}
+
+.project-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px 0px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.project-category {
+  font-size: 14px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Arrow under selected card */
+.selected-project::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 15px 15px 0 15px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.2));
+}
+/*  */
+
+/* footer section */
+.custom-footer h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+.newsletter-box {
+  border-top: 1px solid #000;
+  padding-top: 30px;
+}
+.newsletter-box h6 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", Sans-serif;
+}
+.newsletter-box p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+.newsletter-input {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+.newsletter-input:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+.newsletter-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 0;
+}
+.footer-links {
+  margin-top: 20px;
+  text-align: end;
+}
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: "IBM Plex Sans", Sans-serif;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.custom-footer-section {
+  width: 100%;
+}
+
+/* Inner container */
+.custom-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left text */
+.custom-footer-left {
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "IBM Plex Sans", Sans-serif;
+}
+
+/* Right link */
+.custom-footer-right a {
+  font-size: 14px;
+  color: #6c757d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "IBM Plex Sans", Sans-serif;
+}
+
+.custom-footer-right a:hover {
+  color: #000; /* highlight on hover */
+}
+
+/* Responsive: stack vertically on very small screens */
+@media (max-width: 576px) {
+  .custom-footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/*  */
+
+/* addtional css */
+.text-box {
+  width: 100%;
+}
+
+.side-gap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text-full {
+  font-size: clamp(2rem, 10vw, 6rem); /* scales with screen */
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* archive css */
+.image-grid {
+      padding: 20px;
+    }
+    .img-box {
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Manual sizes */
+    .h-small { height: 200px; }
+    .h-medium { height: 400px; }
+    .h-large { height: 800px; }
+
+
+    /* work page css */
+    /* Unique classnames vm- (Varris Mansuri style) */
+.vm-filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-family: system-ui, sans-serif;
+  
+}
+
+.vm-filter-link {
+  text-decoration: none;
+  color: #7b7b7b;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  
+}
+
+.vm-filter-link:hover {
+  color: #111;
+}
+
+
+.vm-filter-link:hover::after,
+.vm-filter-link.active::after {
+  width: 100%;
+}
+
+
+/* about page css */
+  .aboutme-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .aboutme-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .aboutme-text h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .aboutme-text h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .aboutme-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .aboutme-image {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: end;
+    }
+
+    .aboutme-image img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .aboutme-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .aboutme-text h1 {
+        font-size: 20px;
+      }
+
+      .aboutme-text p {
+        font-size: 15px;
+      }
+    }
+
+
+ 
+
+    .whatido-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .accordion-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+      padding-left: 10px;
+    }
+
+    .accordion-content p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .accordion-content ul {
+      margin: 10px 0;
+      padding-left: 20px;
+      list-style: none;
+    }
+
+    .accordion-content ul li {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .accordion-header {
+        font-size: 18px;
+      }
+      .accordion-content p {
+        font-size: 14px;
+      }
+    }
+
+
+
+
+
+    /*  */
+    /* store section */
+
+     .tile-img {
+      width: 100%;
+      height: 280px;       /* adjust if you want */
+      object-fit: cover;
+      display: block;
+    }
+   
+    .tile-overlay h5 { 
+      font-weight: 700; 
+    font-size: 18px;}
+    .tile-overlay a  { color:#000; text-decoration:none; font-size:14px; }
+    .tile-overlay a:hover { text-decoration:underline; }
+	    .recents-section {
+      margin: 40px 0;
+    }
+    .recents-section{
+         
+    }
+    .recents-section h5 {
+      display: inline;
+      font-size: 26px;
+    font-weight: 500;
+      color: #000;
+      
+    }
+    .recents-section span {
+      color: #6c757d; /* Bootstrap gray */
+      font-size: 1rem;
+      font-size: 26px;
+    font-weight: 500;
+    }
+   
+
+    /* contact page css */
+  .form-control {
+      border: 0;
+      border-bottom: 1px solid #000;
+      border-radius: 0;
+      box-shadow: none;
+      padding-left: 0;
+	  width: 152%;
+        padding: 18px;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #000;
+    }
+    .form-label {
+          font-weight: 500;
+    font-size: 20px;
+    }
+	.font-size {
+		    font-weight: 500 !important;
+			 font-size: 56px;
+
+	}
+	.px-4
+ {
+    padding-right: 8.5rem !important;
+	  padding-left: 8.5rem !important;
+ }   
+   
+/* store page css */
+.product-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card img {
+      transition: transform 0.4s ease;
+      width: 100%;
+          height: 488px;
+      display: block;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .product-card:hover .overlay {
+      opacity: 1;
+    }
+	.forhead{
+		    font-size: 26px;
+    font-weight: 500;
+	    padding-top: 44px;
+
+	}
+   
+
+
