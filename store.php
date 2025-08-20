@@ -9,7 +9,7 @@
     
     <!-- First Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-1-1482x1536.jpg" alt="Sticker Set" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
@@ -21,7 +21,7 @@
 
     <!-- Second Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-2.jpg" alt="Shipping Pack" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
@@ -37,7 +37,7 @@
     
     <!-- First Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-3.jpg" alt="Sticker Set" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
@@ -49,7 +49,7 @@
 
     <!-- Second Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-4.jpg" alt="Shipping Pack" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
@@ -65,7 +65,7 @@
     
     <!-- First Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-5-1486x1536.jpg" alt="Sticker Set" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
@@ -77,7 +77,7 @@
 
     <!-- Second Product -->
     <div class="col-md-6">
-      <div class="product-card border rounded shadow-sm">
+      <div class="product-card">
         <img src="assets/image2/shop-img-6-1482x1536.jpg" alt="Shipping Pack" class="img-fluid">
         <div class="overlay">Add to Cart</div>
       </div>
