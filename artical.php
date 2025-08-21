@@ -1,5 +1,4 @@
-
-	<?php include 'include/header.php'; ?>
+<?php include 'include/header.php'; ?>
   <div class="container-fluid recents-section side-gap">
   <h5>Recents,</h5>
   <span> Design, Development, Management, Marketing</span>

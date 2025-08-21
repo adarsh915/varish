@@ -651,8 +651,8 @@
       border-radius: 0;
       box-shadow: none;
       padding-left: 0;
-	  width: 152%;
-        padding: 18px;
+	    width: 152%;
+      padding: 0px;
     }
     .form-control:focus {
       box-shadow: none;
@@ -660,11 +660,11 @@
     }
     .form-label {
           font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     }
 	.font-size {
 		    font-weight: 500 !important;
-			 font-size: 56px;
+			 font-size: 30px;
 
 	}
 	.px-4
