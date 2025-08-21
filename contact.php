@@ -3,8 +3,7 @@
     <div class="row ">
       <div class="col-md-8">
         <h1 class=" font-size fw-bold">Contact Us</h1>
-        <p class="text-black pt-3 pb-4">(Say hi to us)</p>
-
+        <p class="text-black pt-2 pb-2">(Say hi to us)</p>
         <form>
           <!-- Name -->
           <div class="mb-4">
@@ -42,7 +41,7 @@
         </form>
       </div>
     </div>
-			  <div class="d-flex justify-content-center">
+		<div class="d-flex justify-content-center">
   <button type="submit" class="btn btn-dark px-4">Send</button>
 </div>
   </div>
