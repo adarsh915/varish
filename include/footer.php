@@ -84,5 +84,17 @@ viewBox="0 0 254000 50800"
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/new.js"></script>
    <script src="assets/js/style.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script>
+  window.addEventListener("load", () => {
+    gsap.from(".unique-navbar", {
+      y: 80,          // starts 80px below
+      
+      opacity: 0,     // hidden
+      duration: 1,  // animation time
+      ease: "power3.out" // smooth motion
+    });
+  });
+</script>
   <!-- Custom JavaScript -->
 </html>
