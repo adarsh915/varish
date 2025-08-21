@@ -42,7 +42,7 @@
         </form>
       </div>
     </div>
-			  <div class="d-flex justify-content-center">
+		<div class="d-flex justify-content-center">
   <button type="submit" class="btn btn-dark px-4">Send</button>
 </div>
   </div>
