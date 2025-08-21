@@ -64,6 +64,25 @@
   color: #111;
 }
 
+/* Navbar Load Animation (Slide Up) */
+.unique-navbar {
+  transform: translateY(80px);   /* start from below */
+  opacity: 0;
+  animation: slideUpNav 0.8s ease-out forwards;
+}
+
+@keyframes slideUpNav {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 /* ===== Sidebar ===== */
 .unique-sidebar {
   position: fixed;

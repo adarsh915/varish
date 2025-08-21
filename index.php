@@ -5,8 +5,9 @@
       INDEPENDENT DESIGNER BASED IN INDIA, WORKING GLOBALLY,<br>
       AND CREATING MEANINGFUL AND PURPOSE DRIVEN DIGITAL BRAND EXPERIENCES
     </p>
-    <div class="container-fluid side-gap">
-    <h1 class="unique-hero-title">VARRIS MANSURI</h1>
+    <div class="container-fluid side-gap mb-5">
+    <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
+     <img src="assets/images/VM.svg" alt="" class="w-100">
     </div>
 
   </section>
