@@ -97,20 +97,21 @@ viewBox="0 0 254000 50800"
   });
 
   // scroll
+ gsap.registerPlugin(ScrollTrigger);
 
-    gsap.registerPlugin(ScrollTrigger);
-
- 
-  // 🔹 Footer scroll animation
   gsap.from("footer", {
-    scrollTrigger: {
-      trigger: "footer",
-      start: "top 85%",   // when footer is near bottom of screen
-    },
     y: 60,
     opacity: 0,
     duration: 1,
-    ease: "power3.out"
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top 85%",
+      end: "bottom 60%",               // define an end so leave/enterBack fire
+      toggleActions: "play reverse play reverse", // replay on re-enter
+      // markers: true,                 // uncomment to debug
+      once: false
+    }
   });
 
 </script>
