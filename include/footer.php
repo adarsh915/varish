@@ -12,7 +12,7 @@
           <h6>SIGN UP FOR OUR NEWSLETTER</h6>
           <p>(NO SPAM)</p>
           <div class="d-flex align-items-center" style="border-bottom: 1px solid black;">
-            <input type="email" class="form-control newsletter-input" placeholder="Email">
+            <input type="email" class="form-control newsletter-input" placeholder="Email" style="padding: 12px 0px;">
             <button class="newsletter-btn">→</button>
           </div>
         </div>
