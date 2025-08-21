@@ -85,16 +85,34 @@ viewBox="0 0 254000 50800"
   <script src="assets/js/new.js"></script>
    <script src="assets/js/style.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <script>
   window.addEventListener("load", () => {
     gsap.from(".unique-navbar", {
       y: 80,          // starts 80px below
-      
       opacity: 0,     // hidden
       duration: 1,  // animation time
       ease: "power3.out" // smooth motion
     });
   });
+
+  // scroll
+
+    gsap.registerPlugin(ScrollTrigger);
+
+ 
+  // 🔹 Footer scroll animation
+  gsap.from("footer", {
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top 85%",   // when footer is near bottom of screen
+    },
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
 </script>
   <!-- Custom JavaScript -->
 </html>
