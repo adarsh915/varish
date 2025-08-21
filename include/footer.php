@@ -91,7 +91,7 @@ viewBox="0 0 254000 50800"
     gsap.from(".unique-navbar", {
       y: 80,          // starts 80px below
       opacity: 0,     // hidden
-      duration: 1,  // animation time
+      duration: 1.8,  // animation time
       ease: "power3.out" // smooth motion
     });
   });
@@ -102,7 +102,7 @@ viewBox="0 0 254000 50800"
   gsap.from("footer", {
     y: 100,                  // slide more from below
     opacity: 0,
-    duration: 2.5,           // smoother, longer animation
+    duration: 2.1,           // smoother, longer animation
     ease: "power4.out",      // very smooth easing
     scrollTrigger: {
       trigger: "footer",
