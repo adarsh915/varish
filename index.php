@@ -15,7 +15,7 @@
 
 <div class="container-fluid side-gap">
   <div class="video-div">
-    <video autoplay muted loop playsinline>
+    <video class="animated-video" autoplay muted loop playsinline>
       <source src="assets/video/reel-short.mp4" type="video/mp4">
     </video>
   </div>
@@ -143,9 +143,6 @@
           </div>
         </div>
       </div>
-      
-      
-
     </div>
   </div>
   <!-- project card end -->
