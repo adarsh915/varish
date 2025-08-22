@@ -187,7 +187,7 @@ window.addEventListener("load", () => {
       }
     );
 
-     gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 
     // Target each card separately
     document.querySelectorAll(".project-card").forEach((card) => {
