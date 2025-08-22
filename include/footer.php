@@ -91,7 +91,7 @@ viewBox="0 0 254000 50800"
     gsap.from(".unique-navbar", {
       y: 80,          // starts 80px below
       opacity: 0,     // hidden
-      duration: 1,  // animation time
+      duration: 1.8,  // animation time
       ease: "power3.out" // smooth motion
     });
   });

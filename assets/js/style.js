@@ -1,3 +1,6 @@
+
+
+
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
 const sidebar = document.getElementById('sidebar');
@@ -21,3 +24,4 @@ closeBtn.addEventListener('click', () => {
       });
     });
   
+   
