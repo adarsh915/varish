@@ -186,6 +186,18 @@
   object-fit: cover; /* makes video cover full area */
 }
 /*  */
+/* floating reveal image */
+.project-card .reveal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;      /* adjust size */
+  height: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
 
 /* project card  */
 .selected-project-header {
