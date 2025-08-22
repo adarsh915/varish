@@ -191,8 +191,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;      /* adjust size */
-  height: 200px;
+  width: 250px;      /* adjust size */
+  height: 300px;
   pointer-events: none;
   opacity: 0;
   transform: translate(-50%, -50%);
