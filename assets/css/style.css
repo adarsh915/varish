@@ -666,7 +666,7 @@ display: block;
       border-radius: 0;
       box-shadow: none;
       padding-left: 0;
-	    width: 152%;
+	    width: 100%;
       padding: 0px;
     }
     .form-control:focus {
@@ -748,14 +748,15 @@ display: block;
     }
 
     .section-value {
-      padding: 60px 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     .section-value h6 {
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 2px;
       color: #444;
-          padding-left: 40px;
+          
     }
     .section-value p {
      
@@ -827,7 +828,7 @@ display: block;
 
     /* product info (title + price) sits below the image */
     .product-info {
-      padding: 18px 22px;
+      padding: 18px 0px;
     }
     .product-title {
       font-size: 1.9rem; /* adjust to taste */
@@ -836,3 +837,62 @@ display: block;
     }
     .product-price { color:#222; font-size: 1rem; }
     .old-price { text-decoration: line-through; color:#888; margin-right:8px; }
+
+
+
+    /* responsive code */
+    /* homepage */
+
+   @media(max-width:556px){
+    .video-div{
+      height: auto;
+    }
+    .project-image{
+      height: auto;
+    }
+    .footer-links{
+      text-align: center;
+    } 
+    .footer-links a {
+     font-size: 0.8rem;
+    }
+    .custom-footer-container{
+      padding-top: 10px;
+      gap: 0px;
+    }
+    .custom-footer h2{
+      padding: 0px;
+    }
+    .unique-hero-subtitle{
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+    .text-box{
+      padding-top: 1rem;
+    }
+    .side-gap {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    /* about us page */
+    .aboutme-text p {
+      text-align: center;
+    }
+    .section-value h6{
+      text-align: center;
+    }
+    .section-value p{
+      text-align: center;
+      font-size: 20px;
+    }
+   .aboutme-section{
+     padding-top: 10px;
+   }
+   .aboutme-text h2{
+    font-size: 18px;
+   }
+   .product-title {
+    font-size: 1rem;
+   }
+  }
