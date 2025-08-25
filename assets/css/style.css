@@ -895,4 +895,7 @@ display: block;
    .product-title {
     font-size: 1rem;
    }
+   .store-image{
+    height: 150px;
+   }
   }
