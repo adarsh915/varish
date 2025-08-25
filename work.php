@@ -1,6 +1,6 @@
 <?php include 'include/header.php'; ?>
-<div class="vm-filter-links container-fluid side-gap mt-3">
-  <a href="#" class="vm-filter-link active">All,</a>
+<div class="vm-filter-links container-fluid side-gap mt-5">
+  <a href="#" class="vm-filter-link active text-dark">All,</a>
   <a href="#" class="vm-filter-link">Branding,</a>
   <a href="#" class="vm-filter-link">Packaging,</a>
   <a href="#" class="vm-filter-link">Logo</a>

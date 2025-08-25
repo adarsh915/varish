@@ -5,7 +5,7 @@
       INDEPENDENT DESIGNER BASED IN INDIA, WORKING GLOBALLY,<br>
       AND CREATING MEANINGFUL AND PURPOSE DRIVEN DIGITAL BRAND EXPERIENCES
     </p>
-    <div class="container-fluid side-gap mb-5">
+    <div class="container-fluid side-gap svg-title">
     <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
      <img src="assets/images/VM.svg" alt="" class="w-100">
     </div>
@@ -22,12 +22,13 @@
 </div>
 
 <!-- project card -->
-<div class="selected-project-header container-fluid side-gap">
+
+
+ <div class="container-fluid py-5 side-gap">
+  <div class="selected-project-header ">
     <h2>SELECTED PROJECT</h2>
     <span class="arrow-down">&#8595;</span> <!-- Unicode down arrow -->
   </div>
-
- <div class="container-fluid py-5 side-gap">
     <div class="row g-4">
 
       <!-- Project Card 1 -->
