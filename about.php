@@ -133,8 +133,8 @@
 </section>
     
 
-    <div class=" section-value  container-fluid side-gap">
-      <div class="row w-100">
+    <div class="section-value container-fluid side-gap">
+      <div class="row">
         <!-- Left Column -->
         <div class="col-md-7">
           <h6>VALUE</h6>

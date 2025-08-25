@@ -2,17 +2,18 @@
 <title>BigwayStudio</title>
 
   <!-- text Section -->
-  <section class="unique-hero">
+  <section class="unique-hero container-fluid side-gap">
     <p class="unique-hero-subtitle">
       INDEPENDENT DESIGNER BASED IN INDIA, WORKING GLOBALLY,<br>
       AND CREATING MEANINGFUL AND PURPOSE DRIVEN DIGITAL BRAND EXPERIENCES
     </p>
-    <div class="container-fluid side-gap svg-title">
+   
+
+  </section>
+   <div class="container-fluid side-gap svg-title">
     <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
      <img src="assets/images/VM.svg" alt="" class="w-100">
     </div>
-
-  </section>
   <!-- text section end -->
 
 <div class="container-fluid side-gap">

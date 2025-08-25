@@ -87,8 +87,30 @@ viewBox="0 0 254000 50800"
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
+<script>
+  gsap.registerPlugin(ScrollTrigger);
 
-
+    gsap.fromTo(".animated-video",
+      {
+        scaleX: 0.6,     // compressed horizontally
+        scaleY: 0.6,     // compressed vertically
+        y: 300,          // pushed down
+        opacity: 0.2
+      },
+      {
+        scaleX: 1,       // grow left + right
+        scaleY: 1,       // grow up
+        y: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".animated-video",
+          start: "top 80%",   // when enters viewport
+          toggleActions: "play none none none"
+        }
+      }
+    );
 </script>
   
 </html>
