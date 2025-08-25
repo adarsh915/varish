@@ -481,16 +481,16 @@ display: block;
     font-size: 28px;
     font-weight: 600;
     line-height: 1.2em;
-    color: #000000;
+    color: #3e3636;
     padding-bottom: 25px;
     }
 
     .aboutme-text h1 {
      font-family: "Inter", Sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.2em;
-    color: #000000;
+    color: #3e3636;
     }
 
     .aboutme-text p {
@@ -814,7 +814,7 @@ display: block;
       padding: 12px 14px;
       font-weight: 600;
       letter-spacing: 0.2px;
-      transform: translateY(120%); /* hidden below the image area */
+      transform: translateY(60%); /* hidden below the image area */
       transition: transform 0.33s ease;
       z-index: 10;
       border-radius: 2px;
