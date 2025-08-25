@@ -13,8 +13,8 @@
 </head>
 <body>
  <!-- nav start -->
-<nav class="unique-navbar container-fluid side-gap">
-<a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
+ <nav class="unique-navbar container-fluid side-gap pt-4">
+    <a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
 
 <ul class="unique-nav-links">
 <li><a href="index.php" class="active">Home</a></li>
