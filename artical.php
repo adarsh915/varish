@@ -1,4 +1,6 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio - Artical</title>
+
   <div class="container-fluid recents-section side-gap">
   <h5>Recents,</h5>
   <span> Design, Development, Management, Marketing</span>

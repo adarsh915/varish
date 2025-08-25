@@ -1,4 +1,6 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio - Archive</title>
+
 <div class="container-fluid image-grid side-gap">
     <h4>Archive©11-24</h4>
 </div>

@@ -1,4 +1,5 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio - About</title>
 <section class="aboutme-section container-fluid side-gap mt-4">
     <!-- Left Text -->
     <div class="aboutme-text">

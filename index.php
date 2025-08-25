@@ -1,4 +1,6 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio</title>
+
   <!-- text Section -->
   <section class="unique-hero">
     <p class="unique-hero-subtitle">
