@@ -836,3 +836,20 @@ display: block;
     }
     .product-price { color:#222; font-size: 1rem; }
     .old-price { text-decoration: line-through; color:#888; margin-right:8px; }
+
+
+
+    /* responsive code */
+    /* homepage */
+
+   @media(max-width:556px){
+    .video-div{
+      height: auto;
+    }
+    .project-image{
+      height: auto;
+    }
+    .footer-links{
+      text-align: center;
+    } 
+    }
