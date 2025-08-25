@@ -27,7 +27,7 @@
 <li><a href="contact.php" class="">Contact</a></li>
 </ul>
 
-<button class="unique-menu-btn" id="menuBtn">&#9776;</button>
+<button class="unique-menu-btn" id="menuBtn" style="padding: 0;">&#9776;</button>
 </nav>
 
 <div class="unique-sidebar" id="sidebar">
