@@ -3,7 +3,7 @@
 
 <div class="container-fluid py-5 side-gap">
 	<div class="main">
-		<img src="assets/image2/main.jpg" alt="" class="w-100">
+		<img src="assets/image2/main.jpg" alt="" class="w-100 store-image">
 	</div>
   <h3 class="forhead">Popular,<span class="text-muted"> Mockup, Assets</span></h3>
   <div class="row g-4 mt-4">
