@@ -1,4 +1,6 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio - Contact</title>
+
   <div class="container-fluid my-5 side-gap">
     <div class="row ">
       <div class="col-md-8">

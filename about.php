@@ -1,5 +1,5 @@
 <?php include 'include/header.php'; ?>
-<section class="aboutme-section container-fluid side-gap mt-4">
+<section class="aboutme-section container-fluid side-gap ">
     <!-- Left Text -->
     <div class="aboutme-text">
       <h2>Hello,</h2>

@@ -1,4 +1,5 @@
 <?php include 'include/header.php'; ?>
+<title>BigwayStudio - Store</title>
 
 <div class="container-fluid py-5 side-gap">
 	<div class="main">

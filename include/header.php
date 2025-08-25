@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Starter</title>
 
   <!-- Bootstrap CSS (Latest CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,8 +13,8 @@
 </head>
 <body>
  <!-- nav start -->
-<nav class="unique-navbar container-fluid side-gap">
-<a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
+ <nav class="unique-navbar container-fluid side-gap pt-4">
+    <a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
 
 <ul class="unique-nav-links">
 <li><a href="index.php" class="active">Home</a></li>
