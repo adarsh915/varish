@@ -17,32 +17,31 @@
  <nav class="unique-navbar container-fluid side-gap pt-4">
     <a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
 
-    <!-- Desktop Nav -->
-    <ul class="unique-nav-links">
-      <li><a href="index.php" class="active">Home</a></li>
-      <li><a href="work.php">Work</a></li>
-      <li><a href="archive.php">Archive</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="store.php">Store</a></li>
-      <li><a href="artical.php">Articles</a></li>
-      <li><a href="contact.php">Contact</a></li>
-    </ul>
+<ul class="unique-nav-links">
+<li><a href="index.php" class="active">Home</a></li>
+<li><a href="work.php" class="">Work</a></li>
+<li><a href="archive.php" class="">Archive</a></li>
+<li><a href="about.php" class="">About</a></li>
+<li><a href="store.php" class="">Store</a></li>
+<li><a href="artical.php" class="">Articles</a></li>
+<li><a href="contact.php" class="">Contact</a></li>
+</ul>
 
-    <!-- Mobile Menu Button -->
-    <button class="unique-menu-btn" id="menuBtn">&#9776;</button>
-  </nav>
+<button class="unique-menu-btn" id="menuBtn">&#9776;</button>
+</nav>
 
-  <!-- Sidebar -->
-  <div class="unique-sidebar" id="sidebar">
-    <button class="unique-close-btn" id="closeBtn">&times;</button>
-    <ul>
-      <li><a href="index.php" class="active">Home</a></li>
-      <li><a href="work.php">Work</a></li>
-      <li><a href="archive.php">Archive</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
+<div class="unique-sidebar" id="sidebar">
+<button class="unique-close-btn" id="closeBtn">&times;</button>
+<ul>
+<li><a href="index.php" class="active">Home</a></li>
+<li><a href="work.php">Work</a></li>
+<li><a href="archive.php">Archive</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="store.php">Store</a></li>
+<li><a href="artical.php">Articles</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</div>
   <!-- nav end -->
+
+ 
