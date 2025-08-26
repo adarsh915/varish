@@ -883,8 +883,8 @@ display: block;
       text-align: center;
     }
     .section-value p{
-      text-align: center;
-      font-size: 20px;
+      text-align: justify;
+      font-size: 12px;
     }
    .aboutme-section{
      padding-top: 10px;
@@ -897,5 +897,8 @@ display: block;
    }
    .store-image{
     height: 150px;
+   }
+   .product-card img {
+    height: auto;
    }
   }

@@ -136,12 +136,12 @@
     <div class="section-value container-fluid side-gap">
       <div class="row">
         <!-- Left Column -->
-        <div class="col-md-6">
+        <div class="col-6 col-md-6">
           <h6>VALUE</h6>
         </div>
 
         <!-- Right Column -->
-        <div class="col-md-6">
+        <div class="col-6 col-md-6">
           <p>
             <strong>Zero Bullshit</strong>, Being Human,<br>
             Taking Work Seriously,<br>
