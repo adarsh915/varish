@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const accordionItem = header.parentNode;
+      accordionItem.classList.toggle('active');
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
     // Select all links in both the desktop and mobile menus
     const navLinks = document.querySelectorAll('.unique-nav-links a, .unique-sidebar a');
 
