@@ -20,21 +20,21 @@
         <!-- Footer Links -->
         <div class="col-md-8 col-sm-12 footer-links" style="padding: 0;">
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 footer-col">
               <ul>
                 <li><a href="#">WORK</a></li>
                 <li><a href="#">ARCHIVE</a></li>
                 <li><a href="#">ABOUT</a></li>
               </ul>
             </div>
-            <div class="col-4">
+            <div class="col-4 footer-col">
               <ul>
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">ARTICLES</a></li>
                 <li><a href="#">CONTACT</a></li>
               </ul>
             </div>
-            <div class="col-4">
+            <div class="col-4 footer-col">
               <ul>
                 <li><a href="#">INSTAGRAM</a></li>
                 <li><a href="#">YOUTUBE</a></li>
@@ -90,27 +90,37 @@ viewBox="0 0 254000 50800"
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-    gsap.fromTo(".animated-video",
-      {
-        scaleX: 0.6,     // compressed horizontally
-        scaleY: 0.6,     // compressed vertically
-        y: 300,          // pushed down
-        opacity: 0.2
-      },
-      {
-        scaleX: 1,       // grow left + right
-        scaleY: 1,       // grow up
-        y: 0,
-        opacity: 1,
-        duration: 1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".animated-video",
-          start: "top 80%",   // when enters viewport
-          toggleActions: "play none none none"
-        }
-      }
-    );
+// Wait until everything (including images) is loaded
+window.addEventListener('load', () => {
+  const el = document.querySelector('.animated-video');
+  if (!el) {
+    console.warn('No .animated-video element found');
+    return;
+  }
+
+  // Ensure it's visible and has no leftover transform/opacity inline styles
+  gsap.set(el, { clearProps: 'transform,opacity' });
+
+  // Create scroll-triggered animation.
+  // immediateRender: false prevents GSAP from applying the "from" state on creation.
+  gsap.from(el, {
+    scaleX: 0.8,
+    scaleY: 0.8,
+    y: 300,
+    opacity: 0.2,
+    duration: 1.5,
+    ease: 'power3.out',
+    immediateRender: false, // <- important
+    scrollTrigger: {
+      trigger: el,
+      start: 'top 80%',
+      toggleActions: 'play none none none',
+      // toggleActions: 'play reverse play reverse',
+
+      // markers: true // enable for debugging
+    }
+  });
+});
 </script>
   
 </html>
