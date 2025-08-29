@@ -540,12 +540,17 @@ display: block;
       }
 
       .aboutme-text h1 {
-        font-size: 20px;
+               font-size: 14px;
+        padding-bottom: 20px;
       }
 
       .aboutme-text p {
-        font-size: 15px;
+                font-size: 14px;
+        padding-bottom: 26px;
       }
+         .whatido-title{
+          text-align: center;
+         }
     }
 
 
@@ -628,8 +633,11 @@ display: block;
         font-size: 18px;
       }
       .accordion-content p {
-        font-size: 14px;
+        font-size: 15px !important;
       }
+       .accordion-content ul li{
+        font-size: 11px;
+       } 
     }
 
 
@@ -893,9 +901,7 @@ display: block;
     .aboutme-text p {
       text-align: center;
     }
-    .section-value h6{
-      text-align: center;
-    }
+   
     .section-value p{
       text-align: justify;
       font-size: 12px;
