@@ -194,6 +194,9 @@ display: block;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+.project-card a{
+  text-decoration: none;
+}
 
 /* project card  */
 .selected-project-header {
