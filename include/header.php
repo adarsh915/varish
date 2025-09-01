@@ -17,7 +17,7 @@
     <a href="#" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
 
 <ul class="unique-nav-links">
-<li><a href="index.php" class="active">Home</a></li>
+<li><a href="index.php" class="">Home</a></li>
 <li><a href="work.php" class="">Work</a></li>
 <li><a href="archive.php" class="">Archive</a></li>
 <li><a href="about.php" class="">About</a></li>
