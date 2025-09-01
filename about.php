@@ -79,69 +79,56 @@
   </div>
 
   
-<section class="for-color container-fluid side-gap">
+  <section class="for-color container-fluid side-gap">
     <div class=" new-info">
       <!-- First row -->
-      <div class="row text-center mb-3">
-         <div class=" col-md-1">
-         
-        </div>
-        <div class="col-6 col-md-2">
+      <div class="row row-cols-lg-5 row-cols-md-2 row-cols-2 mb-3 g-3">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-         <div class=" col-md-1">
-      
-        </div>
-      </div>
-
-      <!-- Second row -->
-      <div class="row text-center">
-        <div class=" col-md-1">
-        </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col">
           <img src="https://via.placeholder.com/150x100" class="grid-img" alt="">
         </div>
-
-      </div>
-      <div class=" col-md-1">
       </div>
     </div>
-</section>
+  </section>
+
+
     
 
     <div class="section-value container-fluid side-gap">
       <div class="row">
         <!-- Left Column -->
-        <div class="col-md-6">
+        <div class="col-6 col-md-6">
           <h6>VALUE</h6>
         </div>
 
         <!-- Right Column -->
-        <div class="col-md-6">
+        <div class="col-6 col-md-6">
           <p>
             <strong>Zero Bullshit</strong>, Being Human,<br>
             Taking Work Seriously,<br>

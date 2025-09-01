@@ -12,7 +12,7 @@
   </section>
    <div class="container-fluid side-gap svg-title">
     <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
-     <img src="assets/images/VM.svg" alt="" class="w-100">
+     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try">
     </div>
   <!-- text section end -->
 
