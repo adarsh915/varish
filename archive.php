@@ -1,9 +1,12 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Archive</title>
 
-<div class="container-fluid image-grid side-gap">
-    <h4>Archive©11-24</h4>
+<div class="vm-filter-links container-fluid side-gap mt-5">
+<h1 class="">Archive©11-24</h1>
 </div>
+<!-- <div class="container-fluid image-grid side-gap mt-5">
+    <h1 class="">Archive©11-24</h1>
+</div> -->
 <div class="container-fluid image-grid side-gap">
   <div class="row">
     

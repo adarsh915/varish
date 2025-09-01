@@ -1,12 +1,13 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Artical</title>
-
-  <div class="container-fluid recents-section side-gap">
-  <h5>Recents,</h5>
-  <span> Design, Development, Management, Marketing</span>
+<div class="vm-filter-links container-fluid side-gap mt-5">
+  <a href="#" class="vm-filter-link active text-dark"><h1>Recents,</h1></a>
+  <a href="#" class="vm-filter-link"><h1>Design,</h1></a>
+  <a href="#" class="vm-filter-link"><h1>Development,</h1></a>
+  <a href="#" class="vm-filter-link"><h1>Management,</h1></a>
+  <a href="#" class="vm-filter-link"><h1>Marketing</h1></a>
 </div>
-
-<div class="container-fluid my-5 side-gap">
+<div class="container-fluid image-grid side-gap">
   <div class="row g-4">
     <!-- 1) Text-only column -->
     <div class="col-md-4">

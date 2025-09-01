@@ -1,40 +1,46 @@
 <!-- footer start -->
    <footer>
     <div class="custom-footer container-fluid side-gap">
-    <div class="container" style="padding-bottom: 80px;">
-      <h2>Let's Talk</h2>
+    <div class="container" style="display:flex;justify-content:center;">
+      <button class="talk">Let's Talk</button>
+      <!-- <h2>Let's Talk</h2> -->
     </div>
     
     <div class="newsletter-box container-fluid">
       <div class="row">
         <!-- Newsletter -->
-        <div class="col-md-4 col-sm-12 mb-4" style="padding: 0;">
-          <h6>SIGN UP FOR OUR NEWSLETTER</h6>
-          <p>(NO SPAM)</p>
-          <div class="d-flex align-items-center" style="border-bottom: 1px solid black;">
-            <input type="email" class="form-control newsletter-input" placeholder="Email" style="padding: 12px 0px;border:none !important;">
-            <button class="newsletter-btn">→</button>
-          </div>
-        </div>
+        
         
         <!-- Footer Links -->
-        <div class="col-md-8 col-sm-12 footer-links" style="padding: 0;">
-          <div class="row">
-            <div class="col-4 footer-col">
+        <!-- <div class="col-md-8 col-sm-12 footer-links" style="padding: 0;"> -->
+          <div class="row footer-links">
+            <div class="col-lg-6 footer-col" style="justify-content: start;padding:0">
+              <ul>
+                <li><h6 style="padding-top:5px">SIGN UP FOR OUR NEWSLETTER</h6>
+                 <p>(No Spam)</p></li>
+                <li> 
+                  <div class="d-flex align-items-center" style="border-bottom: 1px solid black;">
+                <input type="email" class="form-control newsletter-input" placeholder="Email" style="padding: 4px 0px;border:none !important;">
+                <button class="newsletter-btn">→</button>
+                </div>
+              </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 footer-col">
               <ul>
                 <li><a href="#">WORK</a></li>
                 <li><a href="#">ARCHIVE</a></li>
                 <li><a href="#">ABOUT</a></li>
               </ul>
             </div>
-            <div class="col-4 footer-col">
+            <div class="col-lg-2 footer-col">
               <ul>
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">ARTICLES</a></li>
                 <li><a href="#">CONTACT</a></li>
               </ul>
             </div>
-            <div class="col-4 footer-col">
+            <div class="col-lg-2 footer-col">
               <ul>
                 <li><a href="#">INSTAGRAM</a></li>
                 <li><a href="#">YOUTUBE</a></li>
@@ -73,7 +79,7 @@ viewBox="0 0 254000 50800"
         VARRIS MANSURI ©2025
       </div>
       <div class="custom-footer-right">
-        <a href="#">TERMS</a>
+        <a href="#">PUNE‑INDIA</a>
       </div>
     </div>
   </div>

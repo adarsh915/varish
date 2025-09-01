@@ -19,16 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // A function to handle the active class on all navigation links
     function handleActiveState(currentUrl) {
-        navLinks.forEach(link => {
-            // Remove 'active' from all links
-            link.classList.remove('active');
+    navLinks.forEach(link => {
+        // Remove 'active' from all links
+        link.classList.remove('active');
 
-            // Find the correct link to activate
-            if (link.getAttribute('href') === currentUrl) {
-                link.classList.add('active');
-            }
-        });
-    }
+        // Normalize both values for comparison
+        const linkHref = link.href; // always gives absolute URL
+        if (linkHref === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Call the function when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    handleActiveState(window.location.href);
+});
 
     // Call the function on page load to set the initial active link
     const currentPath = window.location.pathname.split('/').pop() || 'index.php';
@@ -53,3 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll(".unique-nav-links li a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.pathname === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});

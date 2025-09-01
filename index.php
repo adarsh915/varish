@@ -27,7 +27,7 @@
 <!-- project card -->
 
 
- <div class="container-fluid py-5 side-gap">
+ <div class="container-fluid image-grid side-gap">
   <div class="selected-project-header ">
     <h2>SELECTED PROJECT</h2>
     <span class="arrow-down">&#8595;</span> <!-- Unicode down arrow -->
@@ -42,8 +42,8 @@
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
         </div>
           <div class="project-info">
-            <h3 class="project-title">9-Fad International</h3>
-            <p class="project-category">Branding</p>
+            <h3 class="project-title">Ranx</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
@@ -54,8 +54,8 @@
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
         </div>
           <div class="project-info">
-            <h3 class="project-title">8-Better</h3>
-            <p class="project-category">Branding</p>
+            <h3 class="project-title">Platypus</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
@@ -66,8 +66,8 @@
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
         </div>
           <div class="project-info">
-            <h3 class="project-title">7-KN DEVELOPERS</h3>
-            <p class="project-category">branding</p>
+            <h3 class="project-title">Letship</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
@@ -77,8 +77,8 @@
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
          </div>
           <div class="project-info">
-            <h3 class="project-title">6-EIPI MEDIA</h3>
-            <p class="project-category">branding</p>
+            <h3 class="project-title">Bareen by AJ</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
@@ -88,8 +88,8 @@
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
         </div>
           <div class="project-info">
-            <h3 class="project-title">4-DHARA SHETH DUBAI</h3>
-            <p class="project-category">branding</p>
+            <h3 class="project-title">Keef</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
@@ -100,13 +100,13 @@
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
         </div>
           <div class="project-info">
-            <h3 class="project-title">1-LETSHIP</h3>
-            <p class="project-category">branding</p>
+            <h3 class="project-title">KN</h3>
+            <p class="project-category">BRAND IDENTITY</p>
           </div>
       </div>
 
       
-       <div class="col-md-4 col-lg-6">
+       <!-- <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/images/5-6-1536x864.jpg" class="project-image" alt="Project 3">
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
@@ -114,8 +114,8 @@
           <div class="project-info">
             <h3 class="project-title">2-BAREEN</h3>
             <p class="project-category">branding</p>
-          </div>
-      </div>
+        </div>
+        </div>
 
         <div class="col-md-4 col-lg-6">
         <div class="project-card">
@@ -137,7 +137,7 @@
             <h3 class="project-title">3-RV</h3>
             <p class="project-category">branding</p>
           </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- project card end -->

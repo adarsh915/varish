@@ -31,25 +31,14 @@ position: relative;
 padding-bottom: 5px;
 transition: color 0.3s ease;
 }
+.unique-nav-links li a.active {
+  color: #FF5D15 !important; /* highlight active link */
+  font-weight: 600;          /* optional: make it bold */
+}
+
 
 /* underline animation effect */
-.unique-nav-links li a::after,
-.unique-sidebar ul li a::after {
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-height: 3px;
-width: 0;
-background: #000; /* black underline */
-transition: width 0.3s ease;
-}
 
-/* keep underline for active menu */
-.unique-nav-links li a.active::after,
-.unique-sidebar ul li a.active::after {
-width: 100%;
-}
 .animated-try {
   display: block;
   max-width: 100%;
@@ -292,12 +281,16 @@ display: block;
 /*  */
 
 /* footer section */
-.custom-footer h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 130px 0px;
-  font-family: sans-serif;
+.custom-footer .talk{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 40px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-bottom: 130px;
+    background: transparent;
 }
 .newsletter-box {
   border-top: 1px solid #000;
@@ -313,7 +306,7 @@ display: block;
 .newsletter-box p {
   font-size: 0.8rem;
   margin-bottom: 15px;
-  color: #444;
+  color: #000;
 }
 .newsletter-input {
   border: none;
@@ -329,6 +322,7 @@ display: block;
 .newsletter-btn {
   background: none;
   border: none;
+  color: #444;
   font-size: 1.2rem;
   margin-left: 5px;
   cursor: pointer;
@@ -371,19 +365,20 @@ display: block;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 15px;
 }
 
 /* Left text */
 .custom-footer-left {
   font-size: 14px;
-  color: #6c757d;
+  color: #000;
   font-family: "inter", Sans-serif;
 }
 
 /* Right link */
 .custom-footer-right a {
   font-size: 14px;
-  color: #6c757d;
+  color: #000;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -423,10 +418,10 @@ display: block;
 
 /* archive css */
 .image-grid {
-      padding: 20px;
+      padding-top: 20px;
     }
     .img-box {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       overflow: hidden;
     }
     .img-box img {
@@ -601,6 +596,7 @@ display: block;
       color: #555;
        font-size: 25px !important;
     line-height: 1.3;
+    padding: 15px 0px;
     }
 
     .accordion-content ul {
@@ -790,7 +786,7 @@ display: block;
     color: #909090;
     }
     .section-value p strong {
-      color: #000;
+      color: #FF5D15;
     }
     .big-image img {
    
@@ -881,6 +877,7 @@ display: block;
     .custom-footer-container{
       padding-top: 10px;
       gap: 0px;
+       
     }
     .custom-footer h2{
       padding: 0px;
