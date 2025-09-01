@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 document.addEventListener('DOMContentLoaded', () => {
     // Select all links in both the desktop and mobile menus
-    const navLinks = document.querySelectorAll('.unique-nav-links a, .unique-sidebar a');
+    const navLinks = document.querySelectorAll('.unique-nav-links a');
 
     // Select the mobile menu buttons
     const menuBtn = document.getElementById('menuBtn');
@@ -61,6 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".unique-nav-links li a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.pathname === currentPath) {
+            link.classList.add("active");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll(".uniqe-nav-side li a");
     const currentPath = window.location.pathname;
 
     navLinks.forEach(link => {

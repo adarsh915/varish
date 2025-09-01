@@ -207,7 +207,7 @@
 <div class="container-fluid side-gap my-5">
    <div class="d-flex  justify-content-between  ">
         <div class="box-h2"><h2>ARTICAL</h2></div>
-        <div class="box-h2"><h2>ALL ARTICAL</h2></div>
+        <div class="box-h2"><h2>ALL</h2></div>
       </div>
   <div class="row g-4">
     <!-- 1) Text-only column -->
