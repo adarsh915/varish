@@ -1,7 +1,7 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Store</title>
 
-<div class="container-fluid py-5 side-gap">
+<div class="container-fluid py-5 side-gap mt-3">
 	<div class="main">
 		<img src="assets/image2/main.jpg" alt="" class="w-100 store-image">
 	</div>
@@ -16,6 +16,7 @@
       <div class="col-md-4 col-lg-6">
         <div class="project-card selected-project">
           <img src="assets/image2/shop-img-1-1482x1536.jpg" class="project-image" alt="Project 1">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
           <h3 class="project-title">Sticker Set 25pcs</h3>
             <p class="project-category">$24.00</p>
@@ -38,6 +39,7 @@
       <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/image2/shop-img-2.jpg" class="project-image" alt="Project 3">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
             <h3 class="project-title">Shipping Pack</h3>
             <p class="project-category">$32.00</p>
@@ -48,6 +50,7 @@
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/image2/shop-img-3.jpg" class="project-image" alt="Project 3">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
              <h3 class="project-title">Phone Wallpaper</h3>
             <p class="project-category">$78.00.$56.00</p>
@@ -58,6 +61,7 @@
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/image2/shop-img-4.jpg" class="project-image" alt="Project 3">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
             <h3 class="project-title">Logo Sign</h3>
             <p class="project-category">$85.00</p>
@@ -69,6 +73,7 @@
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/image2/shop-img-5-1486x1536.jpg" class="project-image" alt="Project 3">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
            <h3 class="project-title">Office Banner</h3>
             <p class="project-category">$123.00.$109.00</p>
@@ -80,6 +85,7 @@
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
           <img src="assets/image2/shop-img-6-1482x1536.jpg" class="project-image" alt="Project 3">
+          <div class="overlay">Add to Cart</div>
           <div class="project-info">
             <h3 class="project-title">Blue Notebook</h3>
             <p class="project-category">$86.00</p>

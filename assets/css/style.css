@@ -197,7 +197,9 @@ display: block;
 .project-card a{
   text-decoration: none;
 }
-
+.project-card{
+  position: relative;
+}
 /* project card  */
 .selected-project-header {
   display: flex;
@@ -481,7 +483,7 @@ display: block;
 
 /* about page css */
   .aboutme-section {
-        padding-top: 96px;
+        padding-top: 65px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -749,8 +751,8 @@ display: block;
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-
-    .product-card:hover .overlay {
+     
+    .project-card:hover .overlay {
       opacity: 1;
     }
 	.forhead{
@@ -840,7 +842,7 @@ display: block;
       position: absolute;
       left: 30px;               /* match img-wrap padding to align */
       right: 30px;
-      bottom: 45px;
+      bottom: 145px;
       background: rgba(0,0,0,0.95);
       color: #fff;
       text-align: center;
