@@ -350,6 +350,7 @@ display: block;
 .footer-col{
     display:flex;
     justify-content: end;
+    padding: 0;
 }
 .footer-links li {
   margin-bottom: 10px;
