@@ -43,4 +43,7 @@
 </div>
   <!-- nav end -->
 
- 
+   <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img src="varish-preloader.svg" alt="Loading...">
+  </div>

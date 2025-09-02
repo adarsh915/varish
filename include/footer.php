@@ -94,7 +94,7 @@ viewBox="0 0 254000 50800"
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
 <script>
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 // Wait until everything (including images) is loaded
 window.addEventListener('load', () => {
@@ -128,5 +128,12 @@ window.addEventListener('load', () => {
   });
 });
 </script>
-  
+    <script>
+    // Keep preloader for 3.5 seconds, then hide
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.getElementById("preloader").classList.add("hide");
+      }, 3500); // 3.5 seconds
+    });
+  </script>
 </html>
