@@ -94,7 +94,7 @@ viewBox="0 0 254000 50800"
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
 <script>
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 // Wait until everything (including images) is loaded
 window.addEventListener('load', () => {
