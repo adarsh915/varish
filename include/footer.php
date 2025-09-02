@@ -7,7 +7,7 @@
     </div>
     
     <div class="newsletter-box container-fluid">
-      <div class="row">
+      <!-- <div class="row"> -->
         <!-- Newsletter -->
         
         
@@ -26,21 +26,21 @@
               </li>
               </ul>
             </div>
-            <div class="col-lg-2 footer-col">
+            <div class="col-lg-2 col-4 footer-col">
               <ul>
                 <li><a href="#">WORK</a></li>
                 <li><a href="#">ARCHIVE</a></li>
                 <li><a href="#">ABOUT</a></li>
               </ul>
             </div>
-            <div class="col-lg-2 footer-col">
+            <div class="col-lg-2 col-4 footer-col">
               <ul>
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">ARTICLES</a></li>
                 <li><a href="#">CONTACT</a></li>
               </ul>
             </div>
-            <div class="col-lg-2 footer-col">
+            <div class="col-lg-2 col-4 footer-col">
               <ul>
                 <li><a href="#">INSTAGRAM</a></li>
                 <li><a href="#">YOUTUBE</a></li>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-      </div>
+      <!-- </div> -->
     </div>
     </div>
   <div class="text-box container-fluid side-gap">

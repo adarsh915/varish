@@ -37,9 +37,11 @@
       <!-- Project Card 1 -->
       <div class="col-md-4 col-lg-6">
         <div class="project-card selected-project">
+          <a href="work2.php">
           <img src="assets/images/1-scaled.jpg" class="project-image" alt="Project 1">
           <!-- 👇 floating reveal image -->
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
         </div>
           <div class="project-info">
             <h3 class="project-title">Ranx</h3>
@@ -50,8 +52,10 @@
       <!-- Project Card 2 -->
       <div class="col-md-4 col-lg-6">
         <div class="project-card">
+          <a href="work2.php">
           <img src="assets/images/5-1-scaled.jpg" class="project-image" alt="Project 2">
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
         </div>
           <div class="project-info">
             <h3 class="project-title">Platypus</h3>
@@ -62,8 +66,10 @@
       <!-- Project Card 3 -->
       <div class="col-md-4 col-lg-6">
         <div class="project-card">
+          <a href="work2.php">
           <img src="assets/images/1-2-1536x864.jpg" class="project-image" alt="Project 3">
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
         </div>
           <div class="project-info">
             <h3 class="project-title">Letship</h3>
@@ -73,8 +79,10 @@
 
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
+          <a href="work2.php">
           <img src="assets/images/6-2-1536x1296.jpg" class="project-image" alt="Project 3">
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
          </div>
           <div class="project-info">
             <h3 class="project-title">Bareen by AJ</h3>
@@ -84,8 +92,10 @@
 
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
+          <a href="work2.php">
           <img src="assets/images/1-4-1536x864.jpg" class="project-image" alt="Project 3">
           <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
         </div>
           <div class="project-info">
             <h3 class="project-title">Keef</h3>
@@ -96,8 +106,10 @@
 
        <div class="col-md-4 col-lg-6">
         <div class="project-card">
+          <a href="work2.php">
           <img src="assets/images/2-2-1536x864.jpg" class="project-image" alt="Project 3">
            <video autoplay muted loop playsinline src="assets/image2/reel-short.mp4" class="reveal-image" alt="hover preview"></video>
+          </a>
         </div>
           <div class="project-info">
             <h3 class="project-title">KN</h3>

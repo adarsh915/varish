@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-  accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-      const accordionItem = header.parentNode;
-      accordionItem.classList.toggle('active');
-    });
-  });
-});
+//   accordionHeaders.forEach(header => {
+//     header.addEventListener('click', () => {
+//       const accordionItem = header.parentNode;
+//       accordionItem.classList.toggle('active');
+//     });
+//   });
+// });
 document.addEventListener('DOMContentLoaded', () => {
     // Select all links in both the desktop and mobile menus
     const navLinks = document.querySelectorAll('.unique-nav-links a');
@@ -59,20 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll(".unique-nav-links li a");
-    const currentPath = window.location.pathname;
+// document.addEventListener("DOMContentLoaded", () => {
+//     const navLinks = document.querySelectorAll(".unique-nav-links li a");
+//     const currentPath = window.location.pathname;
 
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.pathname === currentPath) {
-            link.classList.add("active");
-        }
-    });
-});
+//     navLinks.forEach(link => {
+//         link.classList.remove("active");
+//         if (link.pathname === currentPath) {
+//             link.classList.add("active");
+//         }
+//     });
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll(".uniqe-nav-side li a");
+    const navLinks = document.querySelectorAll(".uniqe-nav-side li a, .unique-nav-links li a");
     const currentPath = window.location.pathname;
 
     navLinks.forEach(link => {
