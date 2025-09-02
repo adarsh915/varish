@@ -128,5 +128,12 @@ window.addEventListener('load', () => {
   });
 });
 </script>
-  
+    <script>
+    // Keep preloader for 3.5 seconds, then hide
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.getElementById("preloader").classList.add("hide");
+      }, 3500); // 3.5 seconds
+    });
+  </script>
 </html>
