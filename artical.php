@@ -1,5 +1,5 @@
 <?php include 'include/header.php'; ?>
-<title>BigwayStudio - Artical</title>
+<title>BigwayStudio - Article</title>
 <div class="vm-filter-links container-fluid side-gap mt-5">
   <a href="#" class="vm-filter-link active text-dark"><h1>Recents,</h1></a>
   <a href="#" class="vm-filter-link"><h1>Design,</h1></a>
