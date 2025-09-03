@@ -133,7 +133,7 @@ window.addEventListener('load', () => {
     window.addEventListener("load", function() {
       setTimeout(function() {
         document.getElementById("preloader").classList.add("hide");
-      }, 3500); // 3.5 seconds
+      }, 2500); // 3.5 seconds
     });
   </script>
 </html>
