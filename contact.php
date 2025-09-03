@@ -44,7 +44,7 @@
     </div>
   </div>
   <div class="d-flex justify-content-center">
-    <button type="submit" class="btn btn-dark px-4">Send</button>
+    <button type="submit" class="btn btn-dark form_btn">Send</button>
   </div>
 </div>
 

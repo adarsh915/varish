@@ -14,8 +14,8 @@
         <!-- Footer Links -->
         <!-- <div class="col-md-8 col-sm-12 footer-links" style="padding: 0;"> -->
           <div class="row footer-links">
-            <div class="col-lg-6 col-12 footer-col" style="justify-content: start;padding:0">
-              <ul>
+            <div class="col-lg-6 col-12 footer-col spam" style="padding:0">
+              <ul class="spam_row">
                 <li><h6 style="padding-top:5px">SIGN UP FOR OUR NEWSLETTER</h6>
                  <p>(No Spam)</p></li>
                 <li> 
@@ -24,7 +24,7 @@
                 <button class="newsletter-btn">→</button>
                 </div>
               </li>
-              </ul>
+              </ul> 
             </div>
             <div class="col-lg-2 col-4 footer-col">
               <ul>
