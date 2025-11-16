@@ -913,11 +913,11 @@ display: block;
       animation: pulse 1.5s infinite ease-in-out;
     }
 
-    @keyframes pulse {
+    /* @keyframes pulse {
       0% { transform: scale(1); opacity: 1; }
       50% { transform: scale(1.1); opacity: 0.8; }
       100% { transform: scale(1); opacity: 1; }
-    }
+    } */
     .spam{
       justify-content: start;
     }
@@ -1014,7 +1014,7 @@ display: block;
 
 
 
-   .h-small { height: 400px; }
+    .h-small { height: 400px; }
     .h-medium { height: 400px; }
     .h-large { height: 400px; }
     .recents-section h5{
