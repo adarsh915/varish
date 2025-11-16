@@ -1,0 +1,1049 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* ===== Custom Navbar Styles ===== */
+.unique-navbar {
+background: white;
+padding: 0.8rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+footer{
+    margin-top: 150px;
+}
+.unique-logo img {
+display: block;
+}
+
+.unique-nav-links {
+display: flex;
+gap: 2rem;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.unique-nav-links li a {
+font-family: "inter", Sans-serif;
+text-decoration: none;
+font-size: 20px;
+color: #000;
+font-weight: 500;
+position: relative;
+padding-bottom: 5px;
+transition: color 0.3s ease;
+}
+.unique-nav-links li a.active {
+  color: #FF5D15 !important; /* highlight active link */
+  font-weight: 600;          /* optional: make it bold */
+}
+
+.unique-nav-side li a.active {
+  color: #FF5D15 !important; /* highlight active link */
+  font-weight: 600;          /* optional: make it bold */
+}
+
+
+/* underline animation effect */
+
+.animated-try {
+  display: block;
+  max-width: 100%;
+  transform: none;
+  opacity: 1;
+  will-change: transform, opacity;
+}
+/* ===== Mobile Menu Button ===== */
+.unique-menu-btn {
+display: none;
+font-size: 1.8rem;
+cursor: pointer;
+background: none;
+border: none;
+color: #111;
+}
+
+/* ===== Sidebar ===== */
+.unique-sidebar {
+position: fixed;
+top: 0;
+right: -260px;
+width: 250px;
+height: 100%;
+background: #fff;
+box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+transition: right 0.3s ease;
+padding: 2rem;
+z-index: 999;
+}
+
+.unique-sidebar.active {
+right: 0;
+}
+
+.unique-sidebar ul {
+list-style: none;
+padding: 0;
+}
+
+.unique-sidebar ul li {
+margin: 1rem 0;
+position: relative;
+}
+
+.unique-nav-side li a {
+text-decoration: none;
+font-size: 1.2rem;
+color: #111;
+position: relative;
+padding-bottom: 5px;
+}
+
+.unique-close-btn {
+font-size: 1.5rem;
+cursor: pointer;
+background: none;
+border: none;
+position: absolute;
+top: 15px;
+right: 15px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+.unique-nav-links {
+display: none;
+}
+.unique-menu-btn {
+display: block;
+}
+}
+/* ===== Hero text Section ===== */
+.svg-title{
+  padding-bottom:80px;
+}
+.unique-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: white;
+}
+
+/* Small subtitle text */
+.unique-hero-subtitle {
+      font-size: smaller;
+  font-size: 0.8rem;
+      word-spacing: 5px;
+    font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 9rem;
+  margin-top: 10rem;
+  line-height: 1.5;
+  font-family: "inter", Sans-serif;
+}
+
+/* Big title */
+.unique-hero-title {
+  font-size: 11.1vw; /* responsive scaling */
+  font-weight: 700;
+  color: #000;
+  padding-left: 11px;
+  margin-bottom: 7rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .unique-hero-subtitle {
+    font-size: 0.7rem;
+  }
+  .unique-hero-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-hero-subtitle {
+    font-size: 0.65rem;
+  }
+  .unique-hero-title {
+    font-size: 2.5rem;
+  }
+}
+/*  */
+
+/* video section */
+.video-div {
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+  position: relative;
+}
+
+.video-div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes video cover full area */
+}
+/*  */
+/* floating reveal image */
+.project-card .reveal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;      /* adjust size */
+  height: 300px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.project-card a{
+  text-decoration: none;
+}
+.project-card{
+  position: relative;
+}
+/* project card  */
+.selected-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.selected-project-header h2 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: #111;
+  font-family: sans-serif;
+}
+
+.selected-project-header .arrow-down {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.selected-project-header .arrow-down:hover {
+  transform: translateY(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .selected-project-header {
+    padding: 15px 0px;
+  }
+
+  .selected-project-header h2 {
+    font-size: 13px;
+  }
+
+  .selected-project-header .arrow-down {
+    font-size: 16px;
+  }
+}
+
+.project-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.project-image_2 {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px 0px;
+}
+
+.project-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Inter", Sans-serif;
+}
+
+.project-category {
+  font-size: 0.8rem;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+}
+
+/* Arrow under selected card */
+.selected-project::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 15px 15px 0 15px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.2));
+}
+/*  */
+
+/* footer section */
+.custom-footer .talk{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 40px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-bottom: 130px;
+    background: transparent;
+}
+.newsletter-box {
+  border-top: 1px solid #000;
+  padding-top: 30px;
+}
+.newsletter-box h6 {
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "DM Mono", monospace;
+}
+.newsletter-box p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+.newsletter-input {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+.newsletter-input:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+.newsletter-btn {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 0;
+}
+.footer-links {
+  margin-top: 20px;
+  text-align: end;
+}
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+.footer-col{
+    display:flex;
+    justify-content: end;
+    padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-family: "DM Mono", monospace;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.custom-footer-section {
+  width: 100%;
+}
+
+/* Inner container */
+.custom-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+}
+
+/* Left text */
+.custom-footer-left {
+  font-size: 0.8rem;
+  color: #000;
+  font-family: "DM Mono", monospace;
+}
+
+/* Right link */
+.custom-footer-right a {
+  font-size: 0.8rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "DM Mono", monospace;
+}
+
+.custom-footer-right a:hover {
+  color: #000; /* highlight on hover */
+}
+
+/* Responsive: stack vertically on very small screens */
+@media (max-width: 576px) {
+  .custom-footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/*  */
+
+/* addtional css */
+.text-box {
+  width: 100%;
+}
+
+.side-gap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text-full {
+  font-size: clamp(2rem, 10vw, 6rem); /* scales with screen */
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* archive css */
+.image-grid {
+      padding-top: 20px;
+    }
+    .img-box {
+      margin-bottom: 25px;
+      overflow: hidden;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Manual sizes */
+    .h-small { height: 200px; }
+    .h-medium { height: 400px; }
+    .h-large { height: 800px; }
+
+
+    /* work page css */
+    /* Unique classnames vm- (Varris Mansuri style) */
+.vm-filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-family: system-ui, sans-serif;
+  
+}
+.vm-filter-links h1{
+    font-family: "Inter", Sans-serif;
+}
+
+.vm-filter-link {
+  text-decoration: none;
+  color: #7b7b7b;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  
+}
+.vm-filter-links a {
+  font-size: 26px;
+    font-weight: 500;
+}
+
+.vm-filter-link:hover {
+  color: #111;
+}
+
+
+.vm-filter-link:hover::after,
+.vm-filter-link.active::after {
+  width: 100%;
+}
+
+
+/* about page css */
+  .aboutme-section {
+      padding-top: 53px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .aboutme-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .aboutme-text h2 {
+      font-family: "Inter", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #3e3636;
+    padding-bottom: 25px;
+    }
+
+    .aboutme-text h1 {
+     font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #3e3636;
+    }
+
+    .aboutme-text p {
+        text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #777777;
+    }
+
+    .aboutme-image {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: end;
+    }
+
+    .aboutme-image img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+    }
+    .box-h2 h2 {
+          font-family: "DM Mono", monospace;
+         font-size: 0.8rem;
+        padding-bottom: 30px;
+    }
+
+    .box-h3 h2 {
+          font-family: "DM Mono", monospace;
+         font-size: 0.8rem;
+        padding-bottom: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .aboutme-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .aboutme-text h1 {
+               font-size: 14px;
+        padding-bottom: 20px;
+      }
+
+      .aboutme-text p {
+                font-size: 14px;
+        padding-bottom: 26px;
+      }
+         .whatido-title{
+          text-align: center;
+         }
+    }
+
+
+ 
+
+    .whatido-title {
+        font-family: "Inter", Sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: #272626;
+    font-family: "DM Mono", monospace;
+
+    }
+    .head{
+        font-family: "Inter", Sans-serif;
+    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      
+      font-weight: bold;
+      font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2em;
+    }
+
+    .accordion-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+  
+    }
+
+    .accordion-content p {
+      margin: 10px 0;
+      color: #555;
+       font-size: 25px !important;
+    line-height: 1.3;
+    padding: 15px 0px;
+    font-family: "Inter", Sans-serif;
+    }
+
+    .accordion-content ul {
+      margin: 10px 0;
+      list-style: none;
+      padding-left: 0px;
+    }
+
+    .accordion-content ul li {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: "DM Mono", monospace;
+      margin: 5px 0;
+          color: #3B3636 !important;
+    font-weight: 500;
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .accordion-header {
+        font-size: 18px;
+      }
+      .accordion-content p {
+        font-size: 15px !important;
+      }
+       .accordion-content ul li{
+        font-size: 11px;
+       } 
+    }
+
+
+
+
+
+    /*  */
+    /* store section */
+
+     .tile-img {
+      width: 100%;
+      height: 280px;       /* adjust if you want */
+      object-fit: cover;
+      display: block;
+    }
+   
+    .tile-overlay h5 { 
+      font-weight: 700; 
+    font-size: 18px;}
+    .tile-overlay a  { color:#000; text-decoration:none; font-size:14px; }
+    .tile-overlay a:hover { text-decoration:underline; }
+	    .recents-section {
+      margin: 40px 0;
+    }
+    .recents-section{
+         
+    }
+    .recents-section h5 {
+      display: inline;
+      font-size: 26px;
+    font-weight: 500;
+      color: #000;
+      
+    }
+    .recents-section span {
+      color: #6c757d; /* Bootstrap gray */
+      font-size: 1rem;
+      font-size: 26px;
+    font-weight: 500;
+    }
+   
+
+    /* contact page css */
+  .form-control {
+      border: 0;
+      border-bottom: 1px solid #000;
+      border-radius: 0;
+      box-shadow: none;
+      padding-left: 0;
+	    width: 100%;
+      padding: 0px;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #000;
+    }
+    .form-label {
+          font-weight: 500;
+    font-size: 15px;
+    }
+	.font-size {
+		    font-weight: 500 !important;
+			 font-size: 30px;
+			 font-family: "Inter", Sans-serif;
+
+	}
+	.px-4
+ {
+    padding-right: 8.5rem !important;
+	  padding-left: 8.5rem !important;
+ }   
+   
+/* store page css */
+.product-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card img {
+      transition: transform 0.4s ease;
+      width: 100%;
+      height: 488px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+     
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+	.forhead{
+	    font-size: 2.5rem;
+        font-weight: 500;
+	    padding-top: 44px;
+	    font-family: "Inter", Sans-serif;
+	}
+   
+
+
+/* about page css */
+
+     .new-info {
+      background-color: #F1F1F1;
+      padding: 40px;
+    }
+      .for-color {
+      padding-top: 121px;
+    
+    }
+    .grid-img {
+      width: 100%;
+      height: 150px;   /* adjust height as needed */
+      object-fit: cover;
+      background: #ccc; /* placeholder background */
+    }
+
+    .section-value {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .section-value h6{
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #444;
+      font-family: "DM Mono", monospace;
+          
+    }
+    .section-value p{
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #909090;
+    }
+    .section-value p strong {
+      color: #FF5D15;
+    }
+    .big-image img {
+   
+      width: 100%;
+    }
+  
+
+    /* card */
+     .product-card {
+      /* border: 1px solid #eee; */
+      background: #fff;
+    }
+
+    /* image wrapper: overlay restricted to this area only */
+    .img-wrap {
+      position: relative;
+      overflow: hidden;
+      background: #f6f6f6;
+      padding: 30px;            /* space around image (adjust as needed) */
+      box-sizing: border-box;
+    }
+
+    .img-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.35s ease;
+    }
+
+    /* slight zoom on hover */
+    .img-wrap:hover img {
+      transform: scale(1.05);
+    }
+
+    /* the black Add to Cart bar — lives inside .img-wrap so it won't overlap text */
+    .overlay {
+      position: absolute;
+      left: 30px;               /* match img-wrap padding to align */
+      right: 30px;
+      bottom: 145px;
+      background: rgba(0,0,0,0.95);
+      color: #fff;
+      text-align: center;
+      padding: 12px 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transform: translateY(60%); /* hidden below the image area */
+      transition: transform 0.33s ease;
+      z-index: 10;
+      border-radius: 2px;
+    }
+
+    /* slide up into view when hovering image area */
+    .img-wrap:hover .overlay {
+      transform: translateY(0);
+    }
+
+    /* product info (title + price) sits below the image */
+    .product-info {
+      padding: 18px 0px;
+    }
+    .product-title {
+      font-size: 1.9rem; /* adjust to taste */
+      margin: 0 0 10px;
+      font-weight: 400;
+    }
+    .product-price { color:#222; font-size: 1rem; }
+    .old-price { text-decoration: line-through; color:#888; margin-right:8px; }
+
+
+
+    /* responsive code */
+    /* homepage */
+/* pre loader  */
+    /* Preloader container */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff; /* White background */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    /* Hide preloader after load */
+    .preloader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+     
+
+
+    /* Animation for SVG */
+    .preloader img {
+      width: 300px; /* Adjust as needed */
+      height: auto;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    .spam{
+      justify-content: start;
+    }
+    .form_btn{
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+/*  */
+   @media(max-width:556px){
+    .video-div{
+      height: auto;
+    }
+    .project-image{
+      height: auto;
+    }
+    .footer-links{
+      text-align: center;
+    } 
+    .footer-links a {
+     font-size: 0.8rem;
+    }
+    .custom-footer-container{
+      padding-top: 10px;
+      gap: 0px;
+       
+    }
+    .custom-footer h2{
+      padding: 0px;
+    }
+    .unique-hero-subtitle{
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+    .text-box{
+      padding-top: 1rem;
+    }
+    .side-gap {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    /* about us page */
+    .aboutme-text p {
+      text-align: center;
+    }
+   
+    .section-value p{
+      text-align: justify;
+      font-size: 12px;
+    }
+   .aboutme-section{
+     padding-top: 10px;
+   }
+   .aboutme-text h2{
+    font-size: 18px;
+   }
+   .product-title {
+    font-size: 1rem;
+   }
+   .store-image{
+    height: 150px;
+   }
+
+   .product-card img {
+    height: auto;
+   }
+   .footer-col ul li a{
+    text-align: center;
+   }
+   .footer-col{
+    justify-content: center;
+   }
+   .spam{
+      justify-content: center;
+    }
+    .spam_row{
+      width: 100%;
+    }
+    .project-category{
+      margin-bottom: 0rem;
+    }
+
+    .custom-footer .talk {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 40px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    background: transparent;
+}
+
+
+
+   .h-small { height: 400px; }
+    .h-medium { height: 400px; }
+    .h-large { height: 400px; }
+    .recents-section h5{
+      font-size: 20px;
+    }
+     .recents-section span{
+      font-size: 20px;
+    }
+    .forhead{
+      font-size: 20px;
+    }
+    .vm-filter-links a h1{
+      font-size: 15px;
+    }
+    .vm-filter-links h1{
+      font-size: 15px;
+      
+    }
+
+  }
+.store-banner{
+    padding-top: 2.5rem !important;
+}
