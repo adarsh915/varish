@@ -77,6 +77,38 @@ $(document).ready(function () {
 
 });
 </script>
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Check GSAP load
+    console.log("GSAP Loaded:", gsap);
+
+    // Start with hidden positions
+    gsap.set(".sidebar", { x: -100, opacity: 0 });
+    gsap.set(".header", { y: -50, opacity: 0 });
+
+    // Sidebar slide in from left
+    gsap.to(".sidebar", {
+        x: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "power3.out"
+    });
+
+    // Header slide in downward
+    gsap.to(".header", {
+        y: 0,
+        opacity: 1,
+        duration: 0.9,
+        delay: 0.3,
+        ease: "power3.out"
+    });
+
+});
+</script>
 
 
 

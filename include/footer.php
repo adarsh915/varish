@@ -78,13 +78,16 @@ $social = $result->fetch_assoc();
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+
 </body>
 <!-- footer end -->
   <!-- Bootstrap Bundle with Popper (Latest JS CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
    <script src="assets/js/style.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
 <script>
@@ -130,4 +133,42 @@ window.addEventListener('load', () => {
       }, 2500); // 3.5 seconds
     });
   </script>
+
+  
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+<script>
+window.onload = function() {
+
+    // Test GSAP loading
+    console.log("GSAP Loaded:", typeof gsap);
+
+    gsap.from(".unique-navbar", {
+        y: -100,
+        opacity: 0,
+        duration: 1.1,
+        ease: "power4.out"
+    });
+
+    gsap.from(".unique-nav-links li", {
+        y: -20,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out",
+        delay: 0.2
+    });
+
+    gsap.from(".unique-logo img", {
+        y: -20,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power2.out",
+        delay: 0.1
+    });
+
+};
+</script>
 </html>
