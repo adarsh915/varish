@@ -1,7 +1,11 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Store</title>
 
+<<<<<<< HEAD
 <div class="container-fluid py-5 side-gap mt-3 store-banner">
+=======
+<div class="container-fluid py-5 side-gap mt-3">
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 	<div class="main">
 		<img src="assets/image2/main.jpg" alt="" class="w-100 store-image">
 	</div>

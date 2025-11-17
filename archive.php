@@ -2,7 +2,11 @@
 <title>BigwayStudio - Archive</title>
 
 <div class="vm-filter-links container-fluid side-gap mt-5">
+<<<<<<< HEAD
 <h1 class="head">Archive©11-24</h1>
+=======
+<h1 class="">Archive©11-24</h1>
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 </div>
 <!-- <div class="container-fluid image-grid side-gap mt-5">
     <h1 class="">Archive©11-24</h1>

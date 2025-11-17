@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 include 'db.php';
 $result = $conn->query("SELECT * FROM social_media ORDER BY id DESC");
 ?>
 
+=======
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +21,7 @@ $result = $conn->query("SELECT * FROM social_media ORDER BY id DESC");
 </head>
 <body>
  <!-- nav start -->
+<<<<<<< HEAD
   <nav class="unique-navbar container-fluid side-gap pt-4">
   <?php while ($row = $result->fetch_assoc()) { ?>
     <a href="index.php" class="unique-logo">
@@ -39,6 +43,22 @@ $result = $conn->query("SELECT * FROM social_media ORDER BY id DESC");
   </ul>
 
   <button class="unique-menu-btn" id="menuBtn" style="padding: 0;">&#9776;</button>
+=======
+ <nav class="unique-navbar container-fluid side-gap pt-4">
+    <a href="index.php" class="unique-logo"><img src="assets/images/VM-SYMBOL-e1754968994829.png" width="50px"></a>
+
+<ul class="unique-nav-links">
+<!-- <li><a href="index.php" class="">Home</a></li> -->
+<li><a href="work.php" class="">Work</a></li>
+<li><a href="about.php" class="">Info</a></li>
+<li><a href="archive.php" class="">Archive</a></li>
+<li><a href="store.php" class="">Shop</a></li>
+<li><a href="artical.php" class="">Articles</a></li>
+<li><a href="contact.php" class="">Contact</a></li>
+</ul>
+
+<button class="unique-menu-btn" id="menuBtn" style="padding: 0;">&#9776;</button>
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 </nav>
 
 <div class="unique-sidebar" id="sidebar">
@@ -56,6 +76,12 @@ $result = $conn->query("SELECT * FROM social_media ORDER BY id DESC");
   <!-- nav end -->
 
    <!-- Preloader -->
+<<<<<<< HEAD
   <!-- <div class="preloader" id="preloader">
     <img src="varish-preloader.svg" alt="Loading...">
   </div> -->
+=======
+  <div class="preloader" id="preloader">
+    <img src="varish-preloader.svg" alt="Loading...">
+  </div>
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81

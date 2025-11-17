@@ -1,6 +1,10 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Work</title>
+<<<<<<< HEAD
 <div class="container-fluid side-gap image-grid-2">
+=======
+<div class="container-fluid side-gap image-grid">
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     <div class="video-div">
         <video class="animated-video" autoplay muted loop playsinline>
             <source src="assets/video/reel-short.mp4" type="video/mp4">
@@ -12,6 +16,7 @@
     .platypus-section {
       padding: 50px 20px;
     }
+<<<<<<< HEAD
     .image-grid-2{
         margin-top: 55px;
     }
@@ -20,6 +25,13 @@
       font-weight: 600;
       margin-bottom: 20px;
       font-family: "Inter", Sans-serif;
+=======
+
+    .platypus-left h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     }
 
     .platypus-services {
@@ -29,6 +41,7 @@
     }
 
     .platypus-services li {
+<<<<<<< HEAD
       font-size: 0.8rem;
       font-weight: 500;
       color: black;
@@ -38,6 +51,16 @@
       cursor: pointer;
       transition: color 0.3s ease;
       font-family: "DM Mono", monospace;
+=======
+      font-size: 14px;
+      font-weight: 500;
+      color: #1d3557;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.3s ease;
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     }
 
     .platypus-services li:hover {
@@ -45,12 +68,19 @@
     }
 
     .platypus-right p {
+<<<<<<< HEAD
       font-size: 1.2rem;
       line-height: 1.8;
       color: black;
       margin-bottom: 20px;
       font-family: "Inter", Sans-serif;
       font-weight: 400;
+=======
+      font-size: 15px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 20px;
+>>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     }
 
     /* Responsive tweaks */
