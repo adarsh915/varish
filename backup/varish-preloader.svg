@@ -1,0 +1,17 @@
+<svg width="200" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- A sweeping rectangle that will act as a mask -->
+    <mask id="sweep-mask">
+      <rect x="0" y="0" width="400" height="100" fill="black"></rect>
+      <rect x="-100" y="0" width="100" height="100" fill="white">
+        <animate attributeName="x" from="-100" to="400" dur="2s" repeatCount="indefinite"></animate>
+      </rect>
+    </mask>
+  </defs>
+
+  <!-- Gray text (always visible) -->
+  <text x="50" y="60" font-size="32" font-family="Arial" fill="#ccc">VARRIS MANSURI</text>
+
+  <!-- Black text that appears only through the sweeping mask -->
+  <text x="50" y="60" font-size="32" font-family="Arial" fill="black" mask="url(#sweep-mask)">VARRIS MANSURI</text>
+</svg>

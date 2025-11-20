@@ -74,29 +74,29 @@ window.addEventListener("load", () => {
     });
   });
 
- gsap.registerPlugin(ScrollTrigger);
+//  gsap.registerPlugin(ScrollTrigger);
 
-    gsap.fromTo(".animated-video",
-      {
-        scaleX: 0.6,     // compressed horizontally
-        scaleY: 0.6,     // compressed vertically
-        y: 300,          // pushed down
-        opacity: 0.2
-      },
-      {
-        scaleX: 1,       // grow left + right
-        scaleY: 1,       // grow up
-        y: 0,
-        opacity: 1,
-        duration: 2.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".animated-video",
-          start: "top 80%",   // when enters viewport
-          toggleActions: "play none none none"
-        }
-      }
-    );
+//     gsap.fromTo(".animated-video",
+//       {
+//         scaleX: 0.6,     // compressed horizontally
+//         scaleY: 0.6,     // compressed vertically
+//         y: 300,          // pushed down
+//         opacity: 0.2
+//       },
+//       {
+//         scaleX: 1,       // grow left + right
+//         scaleY: 1,       // grow up
+//         y: 0,
+//         opacity: 1,
+//         duration: 2.5,
+//         ease: "power3.out",
+//         scrollTrigger: {
+//           trigger: ".animated-video",
+//           start: "top 80%",   // when enters viewport
+//           toggleActions: "play none none none"
+//         }
+//       }
+//     );
 
     gsap.registerPlugin(ScrollTrigger);
 

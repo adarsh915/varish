@@ -1,6 +1,6 @@
 <?php include 'include/header.php'; ?>
 <title>BigwayStudio - Work</title>
-<div class="container-fluid side-gap image-grid">
+<div class="container-fluid side-gap image-grid-2">
     <div class="video-div">
         <video class="animated-video" autoplay muted loop playsinline>
             <source src="assets/video/reel-short.mp4" type="video/mp4">
@@ -12,11 +12,14 @@
     .platypus-section {
       padding: 50px 20px;
     }
-
+    .image-grid-2{
+        margin-top: 55px;
+    }
     .platypus-left h2 {
-      font-size: 22px;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-bottom: 20px;
+      font-family: "Inter", Sans-serif;
     }
 
     .platypus-services {
@@ -26,14 +29,15 @@
     }
 
     .platypus-services li {
-      font-size: 14px;
+      font-size: 0.8rem;
       font-weight: 500;
-      color: #1d3557;
+      color: black;
       letter-spacing: 1px;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       text-transform: uppercase;
       cursor: pointer;
       transition: color 0.3s ease;
+      font-family: "DM Mono", monospace;
     }
 
     .platypus-services li:hover {
@@ -41,10 +45,12 @@
     }
 
     .platypus-right p {
-      font-size: 15px;
-      line-height: 1.7;
-      color: #333;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: black;
       margin-bottom: 20px;
+      font-family: "Inter", Sans-serif;
+      font-weight: 400;
     }
 
     /* Responsive tweaks */
