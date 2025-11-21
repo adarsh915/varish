@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-=======
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 /* ===== Custom Navbar Styles ===== */
 .unique-navbar {
 background: white;
@@ -13,12 +10,9 @@ align-items: center;
 justify-content: space-between;
 }
 
-<<<<<<< HEAD
 footer{
     margin-top: 150px;
 }
-=======
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 .unique-logo img {
 display: block;
 }
@@ -32,19 +26,11 @@ padding: 0;
 }
 
 .unique-nav-links li a {
-<<<<<<< HEAD
 font-family: "inter", Sans-serif;
 text-decoration: none;
 font-size: 20px;
 color: #000;
 font-weight: 500;
-=======
-font-family: "Inter", Sans-serif;
-text-decoration: none;
-font-size: 20px;
-color: #000;
-font-weight: 400;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 position: relative;
 padding-bottom: 5px;
 transition: color 0.3s ease;
@@ -233,11 +219,7 @@ display: block;
 }
 
 .selected-project-header h2 {
-<<<<<<< HEAD
   font-size: 0.8rem;
-=======
-  font-size: 14px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
   font-weight: 500;
   margin: 0;
   color: #111;
@@ -291,7 +273,6 @@ display: block;
 }
 
 .project-title {
-<<<<<<< HEAD
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -305,18 +286,6 @@ display: block;
   letter-spacing: 1px;
   font-family: "DM Mono", monospace;
   font-weight: 500;
-=======
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.project-category {
-  font-size: 14px;
-  color: #777;
-  text-transform: uppercase;
-  letter-spacing: 1px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
 
 /* Arrow under selected card */
@@ -351,17 +320,10 @@ display: block;
 }
 .newsletter-box h6 {
   font-weight: 500;
-<<<<<<< HEAD
   font-size: 0.8rem;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-family: "DM Mono", monospace;
-=======
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-family: "inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
 .newsletter-box p {
   font-size: 0.8rem;
@@ -409,13 +371,8 @@ display: block;
   text-decoration: none;
   color: #000;
   font-weight: 500;
-<<<<<<< HEAD
   font-size: 0.8rem;
   font-family: "DM Mono", monospace;
-=======
-  font-size: 0.9rem;
-  font-family: "inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
 .footer-links a:hover {
   text-decoration: underline;
@@ -436,33 +393,19 @@ display: block;
 
 /* Left text */
 .custom-footer-left {
-<<<<<<< HEAD
   font-size: 0.8rem;
   color: #000;
   font-family: "DM Mono", monospace;
-=======
-  font-size: 14px;
-  color: #000;
-  font-family: "inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
 
 /* Right link */
 .custom-footer-right a {
-<<<<<<< HEAD
   font-size: 0.8rem;
-=======
-  font-size: 14px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
   color: #000;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
-<<<<<<< HEAD
   font-family: "DM Mono", monospace;
-=======
-  font-family: "inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
 
 .custom-footer-right a:hover {
@@ -526,12 +469,9 @@ display: block;
   font-family: system-ui, sans-serif;
   
 }
-<<<<<<< HEAD
 .vm-filter-links h1{
     font-family: "Inter", Sans-serif;
 }
-=======
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 
 .vm-filter-link {
   text-decoration: none;
@@ -559,11 +499,7 @@ display: block;
 
 /* about page css */
   .aboutme-section {
-<<<<<<< HEAD
       padding-top: 53px;
-=======
-        padding-top: 65px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -576,11 +512,7 @@ display: block;
 
     .aboutme-text h2 {
       font-family: "Inter", Sans-serif;
-<<<<<<< HEAD
     font-size: 2.5rem;
-=======
-    font-size: 28px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     font-weight: 600;
     line-height: 1.2em;
     color: #3e3636;
@@ -616,24 +548,14 @@ display: block;
       object-fit: cover;
     }
     .box-h2 h2 {
-<<<<<<< HEAD
           font-family: "DM Mono", monospace;
          font-size: 0.8rem;
-=======
-          font-family: "Inter", Sans-serif;
-         font-size: 15px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
         padding-bottom: 30px;
     }
 
     .box-h3 h2 {
-<<<<<<< HEAD
           font-family: "DM Mono", monospace;
          font-size: 0.8rem;
-=======
-          font-family: "Inter", Sans-serif;
-         font-size: 15px;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
         padding-bottom: 30px;
     }
 
@@ -663,7 +585,6 @@ display: block;
 
     .whatido-title {
         font-family: "Inter", Sans-serif;
-<<<<<<< HEAD
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 1.2em;
@@ -674,15 +595,6 @@ display: block;
     .head{
         font-family: "Inter", Sans-serif;
     }
-=======
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.2em;
-    color: #272626;
-
-    }
-
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     .accordion-item {
       border-bottom: 1px solid #ddd;
       padding: 15px 0;
@@ -720,10 +632,7 @@ display: block;
        font-size: 25px !important;
     line-height: 1.3;
     padding: 15px 0px;
-<<<<<<< HEAD
     font-family: "Inter", Sans-serif;
-=======
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     }
 
     .accordion-content ul {
@@ -735,11 +644,7 @@ display: block;
     .accordion-content ul li {
       font-size: 15px;
       text-transform: uppercase;
-<<<<<<< HEAD
       font-family: "DM Mono", monospace;
-=======
-      font-family: "Inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
       margin: 5px 0;
           color: #3B3636 !important;
     font-weight: 500;
@@ -828,10 +733,7 @@ display: block;
 	.font-size {
 		    font-weight: 500 !important;
 			 font-size: 30px;
-<<<<<<< HEAD
 			 font-family: "Inter", Sans-serif;
-=======
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 
 	}
 	.px-4
@@ -875,28 +777,17 @@ display: block;
       opacity: 1;
     }
 	.forhead{
-<<<<<<< HEAD
 	    font-size: 2.5rem;
         font-weight: 500;
 	    padding-top: 44px;
 	    font-family: "Inter", Sans-serif;
-=======
-		    font-size: 26px;
-    font-weight: 500;
-	    padding-top: 44px;
-
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 	}
    
 
 
 /* about page css */
 
-<<<<<<< HEAD
      .new-info {
-=======
-      .new-info {
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
       background-color: #F1F1F1;
       padding: 40px;
     }
@@ -915,7 +806,6 @@ display: block;
       padding-top: 30px;
       padding-bottom: 30px;
     }
-<<<<<<< HEAD
     .section-value h6{
       font-size: 0.8rem;
       font-weight: 500;
@@ -928,20 +818,6 @@ display: block;
     line-height: 1.6;
     margin-bottom: 0;
     font-family: "Inter", Sans-serif;
-=======
-    .section-value h6 {
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: #444;
-          
-    }
-    .section-value p {
-     
-      line-height: 1.6;
-      margin-bottom: 0;
-      font-family: "Inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     font-size: 30px;
     font-weight: 500;
     color: #909090;
@@ -1051,15 +927,6 @@ display: block;
       height: auto;
       animation: pulse 1.5s infinite ease-in-out;
     }
-<<<<<<< HEAD
-=======
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
-    }
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     .spam{
       justify-content: start;
     }
@@ -1173,7 +1040,6 @@ display: block;
     }
     .vm-filter-links h1{
       font-size: 15px;
-<<<<<<< HEAD
       
     }
 
@@ -1181,8 +1047,3 @@ display: block;
 .store-banner{
     padding-top: 2.5rem !important;
 }
-=======
-    }
-
-  }
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
