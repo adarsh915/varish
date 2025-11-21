@@ -10,18 +10,51 @@
    
 
   </section>
-   <div class="container-fluid side-gap svg-title">
+  
+  <div class="image_box">
+   <div class="container-fluid side-gap svg-title main_first">
     <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
-     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try">
+     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try loadimage">
     </div>
   <!-- text section end -->
+      <div class="container-fluid side-gap svg-title head-1">
+    <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
+     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try loadimage">
+    </div>
+  <!-- text section end -->
+   <!-- text section end -->
+      <div class="container-fluid side-gap svg-title head-2">
+    <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
+     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try loadimage">
+    </div>
+  <!-- text section end -->
+   <!-- text section end -->
+      <div class="container-fluid side-gap svg-title head-3">
+    <!-- <h1 class="unique-hero-title">VARRIS MANSURI</h1> -->
+     <img src="assets/images/VM.svg" alt="" class="w-100 animated-try loadimage">
+    </div>
+  </div >
+  <!-- text section end -->
 
-<div class="container-fluid side-gap">
-  <div class="video-div">
+  <!-- text section end -->
+
+<div class="container-fluid side-gap" style="padding-top: 250px;">
+  <!-- video effect -->
+  <div class="spacer"></div>
+  <!--  -->
+  <div class="video-div" id="pinArea">
     <video class="animated-video" autoplay muted loop playsinline>
       <source src="assets/video/reel-short.mp4" type="video/mp4">
     </video>
+
+    <div class="v_overlay">
+    <img class="img-item img1" src="assets/image2/a-1.jpg">
+    <img class="img-item img2" src="assets/image2/a-2.jpg">
+    <img class="img-item img3" src="assets/image2/a-3.jpg">
+     </div>
+  
   </div>
+  <div class="after"></div>
 </div>
 
 <!-- project card -->
@@ -32,10 +65,10 @@
     <h2>SELECTED PROJECT</h2>
     <span class="arrow-down">&#8595;</span> <!-- Unicode down arrow -->
   </div>
-    <div class="row g-4">
+    <div class="row g-4 cards-wrapper" style="overflow-x: hidden;">
 
       <!-- Project Card 1 -->
-      <div class="col-md-4 col-lg-6">
+      <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card selected-project">
           <a href="work2.php">
           <img src="assets/images/1-scaled.jpg" class="project-image" alt="Project 1">
@@ -50,7 +83,7 @@
       </div>
 
       <!-- Project Card 2 -->
-      <div class="col-md-4 col-lg-6">
+      <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card">
           <a href="work2.php">
           <img src="assets/images/5-1-scaled.jpg" class="project-image" alt="Project 2">
@@ -64,7 +97,7 @@
       </div>
 
       <!-- Project Card 3 -->
-      <div class="col-md-4 col-lg-6">
+      <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card">
           <a href="work2.php">
           <img src="assets/images/1-2-1536x864.jpg" class="project-image" alt="Project 3">
@@ -77,7 +110,7 @@
           </div>
       </div>
 
-       <div class="col-md-4 col-lg-6">
+       <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card">
           <a href="work2.php">
           <img src="assets/images/6-2-1536x1296.jpg" class="project-image" alt="Project 3">
@@ -90,7 +123,7 @@
           </div>
       </div>
 
-       <div class="col-md-4 col-lg-6">
+       <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card">
           <a href="work2.php">
           <img src="assets/images/1-4-1536x864.jpg" class="project-image" alt="Project 3">
@@ -104,7 +137,7 @@
       </div>
 
 
-       <div class="col-md-4 col-lg-6">
+      <div class="col-md-4 col-lg-6 animate_card">
         <div class="project-card">
           <a href="work2.php">
           <img src="assets/images/2-2-1536x864.jpg" class="project-image" alt="Project 3">

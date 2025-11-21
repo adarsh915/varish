@@ -8,9 +8,12 @@ $social = $result->fetch_assoc();
 <footer>
   <div class="custom-footer container-fluid side-gap">
     <div class="container" style="display:flex;justify-content:center;">
-      <button class="talk">Let's Talk</button>
-      <!-- <h2>Let's Talk</h2> -->
-    </div>
+    <button class="talk-btn" >
+      <span class="label text-a">Let's Talk</span>
+      <span class="label text-b">Let's Talk</span>
+    </button>
+</div>
+
     
     <div class="newsletter-box container-fluid">
       <!-- <div class="row"> -->
@@ -61,10 +64,12 @@ $social = $result->fetch_assoc();
     </div>
   <div class="text-box container-fluid side-gap">
       <?php if(!empty($social['svg_img'])): ?>
-          <img src="./admin/<?php echo $social['svg_img']; ?>" width="100%">
+          <img src="./admin/<?php echo $social['svg_img']; ?>" class="scroll-image" width="100%" style="display: block;">
+           <div class="shine-overlay"></div>
       <?php else: ?>
           <!-- <img src="./assets/images/varish_text.svg" width="100%"> -->
       <?php endif; ?>
+    </div>
   </div>
   <div class="custom-footer-section container-fluid side-gap">
       <div class="custom-footer-container">
@@ -78,7 +83,7 @@ $social = $result->fetch_assoc();
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script> -->
 
 
 </body>
@@ -91,39 +96,9 @@ $social = $result->fetch_assoc();
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
 <script>
-gsap.registerPlugin(ScrollTrigger);
 
-// Wait until everything (including images) is loaded
-window.addEventListener('load', () => {
-  const el = document.querySelector('.animated-video');
-  if (!el) {
-    console.warn('No .animated-video element found');
-    return;
-  }
+  
 
-  // Ensure it's visible and has no leftover transform/opacity inline styles
-  gsap.set(el, { clearProps: 'transform,opacity' });
-
-  // Create scroll-triggered animation.
-  // immediateRender: false prevents GSAP from applying the "from" state on creation.
-  gsap.from(el, {
-    scaleX: 0.8,
-    scaleY: 0.8,
-    y: 300,
-    opacity: 0.2,
-    duration: 1.5,
-    ease: 'power3.out',
-    immediateRender: false, // <- important
-    scrollTrigger: {
-      trigger: el,
-      start: 'top 80%',
-      toggleActions: 'play none none none',
-      // toggleActions: 'play reverse play reverse',
-
-      // markers: true // enable for debugging
-    }
-  });
-});
 </script>
     <script>
     // Keep preloader for 3.5 seconds, then hide
@@ -137,7 +112,7 @@ window.addEventListener('load', () => {
   
 
 <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script> -->
 
 <script>
 window.onload = function() {
@@ -150,6 +125,7 @@ window.onload = function() {
         opacity: 0,
         duration: 1.1,
         ease: "power4.out"
+        
     });
 
     gsap.from(".unique-nav-links li", {
@@ -158,7 +134,7 @@ window.onload = function() {
         duration: 0.8,
         stagger: 0.15,
         ease: "power2.out",
-        delay: 0.2
+        delay: 3
     });
 
     gsap.from(".unique-logo img", {
@@ -166,7 +142,7 @@ window.onload = function() {
         opacity: 0,
         duration: 0.7,
         ease: "power2.out",
-        delay: 0.1
+        delay: 3
     });
 
 };
