@@ -410,13 +410,24 @@ display: block;
   font-weight: 500;
   font-size: 0.8rem;
   font-family: "DM Mono", monospace;
-=======
-  font-size: 0.9rem;
-  font-family: "inter", Sans-serif;
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
 }
-.footer-links a:hover {
-  text-decoration: underline;
+
+/* underline (single line expanding from center) */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  transform: translateX(-50%); 
+  transition: width 0.35s ease;
+}
+
+/* hover expand from center to both sides */
+.footer-links a:hover::after {
+  width: 100%;
 }
 /*  */
 
@@ -970,15 +981,6 @@ display: block;
       height: auto;
       animation: pulse 1.5s infinite ease-in-out;
     }
-<<<<<<< HEAD
-=======
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
-    }
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
     .spam{
       justify-content: start;
     }
@@ -1099,8 +1101,3 @@ display: block;
 .store-banner{
     padding-top: 2.5rem !important;
 }
-=======
-    }
-
-  }
->>>>>>> eb3859f78fa64c0656277d6ba3d7107041124e81
