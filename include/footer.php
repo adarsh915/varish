@@ -63,7 +63,6 @@ $social = $result->fetch_assoc();
     </div>
     </div>
   <div class="text-box container-fluid side-gap">
-    <div class="shine-wrapper" id="shineTrigger">
       <?php if(!empty($social['svg_img'])): ?>
           <img src="./admin/<?php echo $social['svg_img']; ?>" class="scroll-image" width="100%" style="display: block;">
            <div class="shine-overlay"></div>
@@ -93,9 +92,8 @@ $social = $result->fetch_assoc();
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
    <script src="assets/js/style.js"></script>
-   <script src="assets/js/animation.js"></script>
   
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
    <!-- <script src="assets/js/new.js" > -->
 
     <script>
