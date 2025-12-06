@@ -1,32 +1,56 @@
-// AV animate
-// image load varish AD
+// 3. Initialize Lenis
+
+
+// --- CORE LENIS SETUP ---
+
+// 3. Initialize Lenis
+const lenis = new Lenis({
+  duration: 1.5, // ⬅️ INCREASED: Slower, smoother scroll
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smoothWheel: true,
+  wheelMultiplier: 0.8, // ⬅️ DECREASED: Slower scroll speed on mouse wheel
+  // lerp: 0.075, // Uncomment this for slightly different control, especially on touchpads
+});
+
+// 4. Connect Lenis to ScrollTrigger (Crucial for all animations)
+lenis.on('scroll', ScrollTrigger.update);
+
+// 5. Use GSAP's Ticker to drive the Lenis animation loop
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+// Force a ScrollTrigger refresh after the initial Lenis setup
+window.addEventListener("load", () => ScrollTrigger.refresh());
+
+
+// --- YOUR MODIFIED ANIMATIONS START HERE ---
+
+// AV animate (No changes needed)
 gsap.to(".loadimage", {
   opacity: 1,
   duration: 6,
   ease: "power4.out",
-  delay: 4,     // ⬅ animation starts after delay
+  delay: 4,
 });
 
 gsap.to(".unique-hero-subtitle", {
   opacity: 1,
   duration: 6,
   ease: "power4.out",
-  delay: 3.5,     // ⬅ animation starts after delay
+  delay: 3.5,
 });
 // end
 
-//varish mansuri animation AD
-
-gsap.registerPlugin(ScrollTrigger);
-
+// varish mansuri animation AD (Scrub increased for more fluidity)
 // head 1 → biggest reveal
 gsap.to(".head-1", {
   y: 35,
-  ease: "power2.out",     // smooth easing
+  ease: "power2.out",
   scrollTrigger: {
     start: "top top+=1",
     end: "+=600",
-    scrub: 3,             // smooth scroll following
+    scrub: 4, // ⬅️ INCREASED SCRUB
   }
 });
 
@@ -37,7 +61,7 @@ gsap.to(".head-2", {
   scrollTrigger: {
     start: "top top+=1",
     end: "+=600",
-    scrub: 3,
+    scrub: 4, // ⬅️ INCREASED SCRUB
   }
 });
 
@@ -48,15 +72,38 @@ gsap.to(".head-3", {
   scrollTrigger: {
     start: "top top+=1",
     end: "+=600",
-    scrub: 3,
+    scrub: 4, // ⬅️ INCREASED SCRUB
   }
 });
-//end
+// end
 
-// homepage video AD
-gsap.registerPlugin(ScrollTrigger);
+// homepage video AD (Scrub increased for more fluidity)
+let mk = gsap.matchMedia();
 
-gsap.fromTo(".video-div", 
+
+mk.add("(max-width: 767px)", () => {
+  gsap.fromTo(".video-div",
+    {
+      scale: 0.6,
+      y: 60,
+      opacity: 0,
+    },
+    {
+      scale: 1,
+      y: -20,
+      opacity: 1,
+      ease: "power3.out",
+      duration: 1.6,
+      scrollTrigger: {
+        trigger: ".video-div",
+        start: "top 50%",   // ⬅️ start when screen scroll reaches 50%
+        toggleActions: "play none none none",
+      }
+    }
+  );
+});
+
+gsap.fromTo(".video-div",
   {
     scale: 0.6,
     y: 0,
@@ -67,201 +114,191 @@ gsap.fromTo(".video-div",
     ease: "power3.out",
     scrollTrigger: {
       trigger: ".video-div",
-      start: "top bottom-=1",  // ⬅ starts even with 1px scroll
+      start: "top bottom-=1",
       end: "top 70%",
-      scrub: 3.2,
+      scrub: 4, // ⬅️ INCREASED SCRUB
     }
   }
 );
 // end
 
 
-// video pin image effect AD
-gsap.registerPlugin(ScrollTrigger);
-
+// video pin image effect AD (Pin scrub increased for smoother transition)
 const images = document.querySelectorAll(".img-item");
-
-// ⭐ Set custom bottom positions for each image
-const startBottom = ["-140%", "-140%", "-140%"];  
-const endBottom   = ["160%", "160%", "160%"];      
-
-// pin area height based on images
+const startBottom = ["-140%", "-140%", "-140%"];
+const endBottom   = ["160%", "160%", "160%"];
 const segment = 1400;
 const totalScroll = images.length * segment;
 
-// Pin the wrapper
+// Pin Area
 ScrollTrigger.create({
     trigger: "#pinArea",
     start: "top 20%",
     end: "+=" + totalScroll,
     pin: true,
-    scrub: 1.2,           // ⭐ smoother scrub
+    scrub: 2, // ⬅️ INCREASED SCRUB
     pinSpacing: true,
-    // anticipatePin: 1   // ⭐ FIX jump
 });
 
-// Timeline
+// Timeline for image transitions
 const t5 = gsap.timeline({
     scrollTrigger: {
         trigger: "#pinArea",
         start: "top 25%",
         end: "+=" + totalScroll,
-        scrub: 1.2,        // ⭐ smooth scrub
+        scrub: 2, // ⬅️ INCREASED SCRUB
     }
 });
 
-// Animate images one-by-one
+// Animate images one-by-one (no changes needed)
 images.forEach((img, i) => {
+    gsap.set(img, { bottom: startBottom[i], opacity: 0 });
 
-  // Apply custom starting position
-  gsap.set(img, { bottom: startBottom[i], opacity: 0 });
+    t5.to(img, {
+        opacity: 1,
+        bottom: "10%",
+        ease: "power1.out",
+        duration: 0.5,
+    }, i);
 
-  // ⭐ Smooth appear + move toward center
-  t5.to(img, {
-      opacity: 1,
-      bottom: "10%",
-      ease: "power1.out",      // ⭐ smooth
-      duration: 0.5,           // ⭐ smoother transition
-  }, i);
-
-  // ⭐ Smooth exit upward
-  t5.to(img, {
-      bottom: endBottom[i],
-      opacity: 1,
-      ease: "power1.inOut",    // ⭐ smooth exit
-      duration: 0.5
-  });
+    t5.to(img, {
+        bottom: endBottom[i],
+        opacity: 1,
+        ease: "power1.inOut",
+        duration: 0.5
+    });
 });
 // end
 
 
-
-// homepage cards AD
-
-gsap.registerPlugin(ScrollTrigger);
-
+// homepage cards AD (No changes needed)
 gsap.utils.toArray(".animate_card").forEach((card, i) => {
 
-  // alternate direction
-  const direction = i % 2 === 0 ? -80 : 80;
+    const direction = i % 2 === 0 ? -80 : 80;
 
-  gsap.from(card, {
-    scrollTrigger: {
-      trigger: card,
-      start: "top 85%",
-      end: "bottom 60%",       // helps smoother reversing
-      scrub: 3,                // ★ smooth forward & reverse
-      toggleActions: "play none none reverse",
-    },
-    x: direction,
-    opacity: 1,
-    duration: 3.2,
-    ease: "power3.out"
-  });
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        end: "bottom 60%",
+        scrub: 3,
+        toggleActions: "play none none reverse",
+      },
+      x: direction,
+      opacity: 1,
+      duration: 3.2,
+      ease: "power3.out"
+    });
 
 });
 // end
 
 
-// button text AD
+// button text AD (No changes needed)
 const btn = document.querySelector('.talk-btn');
 const a = document.querySelector('.text-a');
 const b = document.querySelector('.text-b');
 
-// GPU optimization = smoother
 a.style.willChange = "transform";
 b.style.willChange = "transform";
 
-// Create timeline
 const tl = gsap.timeline({ paused: true });
 
-// Positions
 gsap.set(a, { yPercent: 0 });
 gsap.set(b, { yPercent: 100 });
 
-// Smoothest swap animation
 tl.to(a, {
-  yPercent: -100,
-  duration: 0.55,
-  ease: "power4.out"
+    yPercent: -100,
+    duration: 0.55,
+    ease: "power4.out"
 }, 0);
 
 tl.to(b, {
-  yPercent: 0,
-  duration: 0.55,
-  ease: "power4.out"
-}, 0.05); // small delay = smoother flow
+    yPercent: 0,
+    duration: 0.55,
+    ease: "power4.out"
+}, 0.05);
 
 tl.to(btn, {
-  duration: 0.55,
-  ease: "power2.out"
+    duration: 0.55,
+    ease: "power2.out"
 }, 0);
 
-// Smooth playback
 tl.timeScale(0.9);
 
-// Hover events
 btn.addEventListener("mouseenter", () => tl.play());
 btn.addEventListener("mouseleave", () => tl.reverse());
-
-// Focus (keyboard)
 btn.addEventListener("focus", () => tl.play());
 btn.addEventListener("blur", () => tl.reverse());
 
-// Touch (mobile)
 let touchTimer = null;
 btn.addEventListener("touchstart", (e) => {
-  e.preventDefault();
-  tl.play();
-  clearTimeout(touchTimer);
-  touchTimer = setTimeout(() => tl.reverse(), 1200);
+    e.preventDefault();
+    tl.play();
+    clearTimeout(touchTimer);
+    touchTimer = setTimeout(() => tl.reverse(), 1200);
 }, { passive: false });
 // end
 
 
-// footer image AD
+// footer image AD (No changes needed)
+let mm = gsap.matchMedia();
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".scroll-image", {
-  y: 0,               // move image UP smoothly
-  opacity: 1,           // fade clearly
-  ease: "power3.out",   // smooth soft motion
-  duration: 1.5,
-  scrollTrigger: {
-    trigger: ".text-box",
-    start: "top bottom",      // trigger when image enters screen
-    end: "top center",        // finish animation when you reach near bottom
-    scrub: 2.5,               // SUPER smooth
-  }
+mm.add("(max-width: 576px)", () => {
+  // Mobile animation
+  gsap.to(".scroll-image", {
+    y: -60,
+    opacity: 1,
+    ease: "power3.out",
+    duration: 1.5,
+    scrollTrigger: {
+      trigger: ".text-box",
+      start: "top bottom",
+      end: "top center",
+      scrub: 2.5,
+    }
+  });
 });
+
+mm.add("(min-width: 769px)", () => {
+  // Desktop / large screens animation
+  gsap.to(".scroll-image", {
+    y: 0,          // different animation for desktop
+    opacity: 1,
+    ease: "power3.out",
+    duration: 1.5,
+    scrollTrigger: {
+      trigger: ".text-box",
+      start: "top bottom",
+      end: "top center",
+      scrub: 2.5,
+    }
+  });
+});
+
 // end
 
-// shine animation bottom footer AD
-
-gsap.registerPlugin(ScrollTrigger);
-
-// Start outside screen
+// shine animation bottom footer AD (FIXED)
 gsap.set(".shine-overlay", { x: "-150%" });
 
-// Trigger when the user reaches the very bottom of the page
 ScrollTrigger.create({
   trigger: document.documentElement,
+  // ⬅️ FIX: Changed 'top' to 'bottom' to trigger when the scroll ENDS.
   start: () =>
     (document.documentElement.scrollHeight - window.innerHeight) + " bottom",
-  once: true,   // triggers only first time you reach bottom
+  once: true,
   onEnter: () => {
     gsap.to(".shine-overlay", {
       x: "400%",
       duration: 3,
       ease: "power2.out",
-      repeat: -1,      // ⭐ keeps looping forever
-      repeatDelay: 0.5 // optional pause between loops
+      repeat: -1,
+      repeatDelay: 0.5
     });
   }
 });
 
-// Refresh on load for accurate page height
+// Refresh on load
 window.addEventListener("load", () => ScrollTrigger.refresh());
 // end
-// AD animate end
+// end

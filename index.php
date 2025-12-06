@@ -2,13 +2,12 @@
 <title>BigwayStudio</title>
 
   <!-- text Section -->
+
   <section class="unique-hero container-fluid side-gap">
     <p class="unique-hero-subtitle">
       INDEPENDENT DESIGNER BASED IN INDIA, WORKING GLOBALLY,<br>
       AND CREATING MEANINGFUL AND PURPOSE DRIVEN DIGITAL BRAND EXPERIENCES
     </p>
-   
-
   </section>
   
   <div class="image_box">
@@ -38,23 +37,21 @@
 
   <!-- text section end -->
 
-<div class="container-fluid side-gap" style="padding-top: 250px;">
+<div class="container-fluid side-gap video_box">
   <!-- video effect -->
-  <div class="spacer"></div>
+  <!-- <div class="spacer"></div> -->
   <!--  -->
-  <div class="video-div" id="pinArea">
+  <div class="video-div">
     <video class="animated-video" autoplay muted loop playsinline>
       <source src="assets/video/reel-short.mp4" type="video/mp4">
     </video>
-
-    <div class="v_overlay">
+    <!-- <div class="v_overlay">
     <img class="img-item img1" src="assets/image2/a-1.jpg">
     <img class="img-item img2" src="assets/image2/a-2.jpg">
     <img class="img-item img3" src="assets/image2/a-3.jpg">
-     </div>
-  
+     </div> -->
   </div>
-  <div class="after"></div>
+  <!-- <div class="after"></div> -->
 </div>
 
 <!-- project card -->

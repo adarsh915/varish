@@ -97,11 +97,7 @@ $social = $result->fetch_assoc();
   
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
    <!-- <script src="assets/js/new.js" > -->
-<script>
 
-  
-
-</script>
     <script>
     // Keep preloader for 3.5 seconds, then hide
     window.addEventListener("load", function() {
