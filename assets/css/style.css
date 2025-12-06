@@ -425,6 +425,7 @@ padding-top: 250px;
   font-weight: 500;
   font-size: 0.8rem;
   font-family: "DM Mono", monospace;
+  padding-bottom: 4px;
 }
 
 /* underline (single line expanding from center) */
@@ -996,6 +997,7 @@ padding-top: 250px;
       height: auto;
       animation: pulse 1.5s infinite ease-in-out;
     }
+
     .spam{
       justify-content: start;
     }
@@ -1119,4 +1121,121 @@ padding-top: 250px;
   }
 .store-banner{
     padding-top: 2.5rem !important;
+}
+
+
+/* heading animation */
+.image_box{
+  position: relative;
+}
+.head-3{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  /* transform: translateY(49px); */
+} 
+
+.head-2{
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  /* transform: translateY(37px); */
+}
+
+.head-1{
+  position: absolute;
+  background-color: white;
+  z-index: 3;
+  /* transform: translateY(21px); */
+  
+}
+.main_first{
+  position: absolute;
+  background-color: white;
+  z-index: 4;
+
+}
+
+/* load image varish */
+.loadimage{
+  opacity: 0;
+}
+.unique-hero-subtitle{
+  opacity: 0;
+}
+.scroll-image {
+  transform: translateY(300px);   /* starting lower */
+  opacity: 0;                    /* fade in */
+}
+
+
+
+/*  */
+:root{ --btn-w:240px; --btn-h:62px; }
+
+    .talk-btn{
+      --bg: transparent;
+      width:300px;
+      height:80px;
+      border-radius:50px;
+      border:2px solid #000;
+      background:var(--bg);
+      cursor:pointer;
+      overflow:hidden;
+      position:relative;
+      padding: 3px 40px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      outline: none;
+       margin-bottom: 130px;
+    }
+
+    /* ensure no layout shift — texts occupy same space */
+    .talk-btn .label{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      pointer-events:none;         /* let button receive events */
+      line-height:var(--btn-h);
+      font-weight:700;
+      font-size:3rem;
+    }
+   
+    .talk-btn .text-a{ color:#000; }
+    .talk-btn .text-b{ color:black; }
+
+    /* optional focus style for accessibility */
+    .talk-btn:focus{
+      box-shadow:0 6px 20px rgba(0,0,0,0.12);
+    }
+
+
+/* bottom text shine animation */
+/* shine effect */
+.shine-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  /* background-color: red; */
+}
+.shine-overlay {
+  position: absolute;
+  top: 0;
+  left: -150%;          /* start outside */
+  width: 100%;
+  height: 100%;
+   background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255,255,255,0.7) 50%,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
 }
